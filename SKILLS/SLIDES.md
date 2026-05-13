@@ -8,69 +8,79 @@
 
 ## Purpose
 
-This skill produces a complete slide deck blueprint — a structured, slide-by-slide document that a designer, a design AI (Claude Artifacts, Midjourney, v0, Gamma, etc.), or a PowerPoint builder can execute without needing to ask clarifying questions.
+A 10-minute workshop needs at most **5–7 slides**. More is clutter.
 
-This skill does **not** create the actual slides. It creates the comprehensive brief for each slide, including layout, content, speaker notes, and a detailed visual design prompt ready to hand to any AI image or design tool.
+In this format, slides are **beats** — visual cues that mark phase transitions and anchor the group's attention. They are not content delivery surfaces. The facilitator delivers the content verbally. The slides say: "this is where we are and what we're doing right now."
 
-Think of the output as a "slide spec sheet" — everything needed to build the deck is here.
+This skill produces a slide-by-slide blueprint with layout, minimal content, speaker cues, and a design prompt for each slide ready to hand to any AI design tool (Claude Artifacts, Gamma, v0, Midjourney, Canva AI, etc.).
 
 ---
 
 ## Inputs
 
-Read the following before starting:
-- `context/workshop_description.md` — topic, audience, branding/tone hints if any
-- `projects/<slug>/02_learning_goals.md` — objectives (each objective should become a content section of the deck)
-- `projects/<slug>/03_script.md` — use the agenda to derive the slide structure; each script segment maps to a slide cluster
+Read before starting:
+- `context/workshop_description.md` — topic, audience, any visual/branding notes
+- `projects/<slug>/02_learning_goals.md` — the ILO (appears on Slide 01 and Slide 05)
+- `projects/<slug>/03_script.md` — the ARIVA phases and exact task/question wording
 
 ---
 
-## Slide Architecture
+## Slide Map for a 10-Minute ARIVA Workshop
 
-Map the script's agenda to slide clusters. Each script segment becomes a cluster of 1–4 slides:
+One slide per phase beat. This is the default structure — do not add slides unless the topic genuinely requires it.
 
-| Script Segment | Typical Slide Count | Slide Types |
-|---|---|---|
-| Opening & Welcome | 1–2 | Title slide, Agenda slide |
-| Context Setting | 1–3 | Problem/Why, Audience poll, Framing |
-| Core Content Block | 2–5 | Concept intro, Diagram/model, Example, Comparison |
-| Activity | 1–2 | Activity instructions, Timer/countdown prompt |
-| Debrief | 1–2 | Reflection prompts, Key takeaways |
-| Closing | 1–3 | Summary, Next steps, Resources |
+| Slide | Phase | Purpose | Max text |
+|---|---|---|---|
+| 01 | A — Arrival | Title + ILO | Title + 1 sentence |
+| 02 | R — Reactivating | The one question | 1 question, large |
+| 03 | I — Informing | The concept / key visual | 1 headline + 1 image or diagram |
+| 04 | V — Verarbeitung | Task instructions + timer | Numbered steps + timer graphic |
+| 05 | A — Assessing | The assessing question | 1 question, large |
 
-Aim for roughly **1 slide per 2–3 minutes** of session time. A 60-min workshop → ~20–25 slides. Adjust to fit the described duration.
+Optional additions (only if clearly needed):
+- **Slide 03b** — A second visual for the Informing phase if the concept has two clearly separate parts (keep it to one additional slide max)
+- **Slide 06** — A "where to go next" close slide with one resource or one sentence
+
+Total slides: 5–7 maximum.
+
+---
+
+## Design Principles for This Format
+
+**Less text, more space.** Every slide should have breathing room. If a slide feels crowded, remove text — don't shrink the font.
+
+**One visual per slide.** A diagram, a photo, an icon, a chart — one thing that earns its space. No decorative elements.
+
+**The slide serves the facilitator, not the audience.** Participants should be looking at the facilitator, not reading slides. Text on slides is a prompt and a cue, not the instruction.
+
+**Consistency over creativity.** A simple, consistent visual system (one background, one heading font, two colors) is better than a varied, design-heavy deck that takes 3 hours to build.
 
 ---
 
 ## Layout Vocabulary
 
-Use these layout names in your slide entries. Design tools understand them:
+Use these exact names in the output — design tools recognize them:
 
-- **Title slide** — Large title, subtitle, presenter name/date
-- **Section header** — Bold label to introduce a new topic cluster
-- **Two-column** — Left text/bullet, right image or diagram
-- **Full-image** — Background image with minimal text overlay
-- **Bullet list** — Title + 3–5 bullets (avoid more than 5)
-- **Quote** — Large pull quote, centered
-- **Diagram** — Mostly visual, minimal labels
-- **Activity card** — Instructions layout, numbered steps
-- **Comparison** — Side-by-side (2 or 3 columns)
-- **Timeline** — Horizontal or vertical flow
-- **Takeaway / Summary** — Highlighted key points
+- **Title card** — Large centered title, subtitle below, name/date small
+- **Quote card** — One sentence or question, very large type, centered, minimal background
+- **Two-column** — Left side: text or steps · Right side: image or diagram
+- **Full-image** — Edge-to-edge image with minimal text overlay
+- **Instruction card** — Numbered list, clean, generous spacing, with a timer graphic or badge
+- **Takeaway card** — One bold statement, large, centered — used for the Assessing question
 
 ---
 
 ## Design Prompt Guidelines
 
-Every slide entry includes a `Design Prompt` field. This is a detailed instruction for a visual AI or designer. Write it as if you're briefing a designer who has never seen the workshop — be specific about:
+Each slide entry includes a `Design Prompt` — a brief for a visual AI or designer. Write each prompt as if briefing someone who has never seen the workshop. Be specific about:
 
-- **Visual style** — color mood, photography vs illustration, abstract vs literal
-- **Layout** — where elements sit on the slide
-- **Key visual element** — what the main image/diagram/icon should convey
-- **Text treatment** — how prominently text appears vs visuals
-- **What to avoid** — clichés, stock-photo tropes, overly complex diagrams
+- What the dominant visual element is and what it should communicate
+- Color mood and background treatment
+- Text size and weight relative to the visual
+- What to avoid (clichés, cluttered layouts, clip-art)
+- Reference to the overall visual language established in Slide 01
 
-Reference a consistent visual language across the deck (e.g. "same color palette as Slide 1", "maintain the minimal flat illustration style introduced earlier").
+Keep prompts to 3–5 sentences. They are briefs, not essays.
 
 ---
 
@@ -81,15 +91,16 @@ Reference a consistent visual language across the deck (e.g. "same color palette
 
 **Generated by:** Skill 04 — Slides Generation
 **Workshop slug:** <slug>
-**Total slides:** <N>
-**Deck tone:** <e.g. professional & minimal / warm & approachable / bold & high-contrast>
-**Primary color palette suggestion:** <e.g. Deep navy + warm amber + off-white>
+**Total slides:** <5–7>
+**Deck tone:** <e.g. warm & direct / bold & minimal / clean & professional>
+**Color palette:** <e.g. Deep teal + soft white + amber accent>
+**Font suggestion:** <e.g. Headings: DM Sans Bold / Body: DM Sans Regular>
 
 ---
 
-## Deck Overview
+## Visual System
 
-<2–3 sentences describing the visual arc of this deck: how it opens, what the visual rhythm is through the middle, how it closes. This helps a designer understand the whole before building the parts.>
+<2–3 sentences describing the visual language of the deck. This is the brief for any tool or designer building the actual slides.>
 
 ---
 
@@ -97,75 +108,121 @@ Reference a consistent visual language across the deck (e.g. "same color palette
 
 ---
 
-### Slide 01 — Title Slide
-**Layout:** Title slide
+### Slide 01 — Arrival / Title Card
+**Phase:** A — Arrival
+**Layout:** Title card
 **Content:**
-- Title: <Workshop title>
-- Subtitle: <Tagline or date/context>
-- Presenter: [Presenter Name]
+- Title: **<Workshop title>**
+- Subtitle: *<ILO stated in plain language — one short sentence>*
+- Presenter: [Name] · [Date/Context]
 
-**Speaker note:** <What the facilitator says while this slide is up — usually a welcome and brief personal intro.>
+**Speaker cue:** State your name, the topic, and read the ILO aloud from the slide. Move on immediately.
 
 **Design Prompt:**
-> <Detailed visual brief. Example: "Full-bleed background using a deep navy-to-midnight-blue gradient. The title text is large, sans-serif, off-white, centered. A subtle abstract geometric pattern in the lower-right corner suggests structure and learning. No photography. Clean, modern, confident. The overall feel is 'TED-inspired but approachable'. Avoid corporate clichés like handshakes or lightbulbs.">
+> <3–5 sentence brief. Example: "Full-bleed background in deep teal. Title centered in large white DM Sans Bold. Subtitle in smaller weight below, off-white. No decorative elements. The overall feeling is calm, clear, and confident — like a good opening line. Avoid gradients, stock photos, and any decorative typography.">
 
 ---
 
-### Slide 02 — Agenda
-**Layout:** Bullet list
+### Slide 02 — Reactivating Question
+**Phase:** R — Reactivating
+**Layout:** Quote card
 **Content:**
-- Title: "What we'll cover today"
-- Bullets: <List each script segment with approximate time>
+- Large text: **"<Exact reactivation question from the script>"**
+- Optional small label: *Think about it. 30 seconds.*
 
-**Speaker note:** <How the facilitator walks through the agenda — what to emphasize, what to say about pacing.>
+**Speaker cue:** Read the question aloud, then wait. Collect responses before advancing.
 
 **Design Prompt:**
-> <Brief. Maintain style from Slide 01. The agenda items appear as numbered steps with subtle icons. Light background. Plenty of white space. Same typeface family.>
+> <Brief. Same visual system as Slide 01. The question dominates the slide — 70% of the space. Background shifts slightly from Slide 01 to signal a new phase (e.g. lighter or slightly different hue). No images. Clean.>
 
 ---
 
-### Slide 03 — <Segment: Context Setting> — <Slide title>
-**Layout:** <layout type>
+### Slide 03 — Informing: The Concept
+**Phase:** I — Informing
+**Layout:** <Two-column OR Full-image — choose based on whether a visual analogy helps>
 **Content:**
-- <Main text or key point>
-- <Supporting detail if any>
+- Headline: **<Core concept in 4–8 words>**
+- <Left column OR overlay: 1–2 supporting phrases or bullets (max)>
+- <Right column OR background: The key visual — what does the concept look like?>
 
-**Speaker note:** <Facilitator notes for this slide.>
+**Speaker cue:** This slide is your visual anchor while you talk. Don't read it — use it as a backdrop.
 
 **Design Prompt:**
-> <Detailed visual brief specific to this slide's content and purpose.>
+> <Describe the key visual in detail. What does it show? Why does that image/diagram make the concept clearer? What metaphor does it carry? Reference the palette from Slide 01.>
 
 ---
 
-<Continue for every slide in the deck, following the same structure.>
+### *(Slide 03b — optional second Informing slide)*
+**Phase:** I — Informing (continued)
+**Layout:** <Layout type>
+**Content:** <Only if the concept has two genuinely distinct parts that benefit from separation>
+
+**Speaker cue:** <When to advance to this slide.>
+
+**Design Prompt:** > <Brief.>
 
 ---
 
-## Slide Design System Summary
+### Slide 04 — Verarbeitung Task
+**Phase:** V — Verarbeitung
+**Layout:** Instruction card
+**Content:**
+- Title: **"Your turn."** *(or equivalent — short, direct)*
+- Numbered steps:
+  1. <Task step 1>
+  2. <Task step 2 — if applicable>
+- Timer badge or graphic: **2 minutes**
 
-<A brief summary of the visual system used across the deck — fonts, colors, icon style, image treatment — so a designer can stay consistent when adapting or extending the deck.>
+**Speaker cue:** Read the task prompt aloud while this slide is up. Start the timer visibly. Leave this slide showing while participants work.
 
-**Fonts:** <e.g. Headings: Inter Bold / Body: Inter Regular>
-**Colors:**
-- Primary: <hex or description>
-- Secondary: <hex or description>
-- Background: <hex or description>
-- Accent: <hex or description>
+**Design Prompt:**
+> <The task instructions should be the largest text on the slide. Clean, instruction-card layout — think a workshop sticky note blown up to full size. Timer badge in the corner (amber or accent color). Background lighter than previous slides to signal a shift to active mode. No decoration.>
 
-**Image style:** <e.g. flat vector illustration / editorial photography / data visualization>
-**Icon style:** <e.g. outline icons, 2px stroke, monochrome>
-**Animation/transition suggestion:** <e.g. simple fade / none / subtle slide-in for bullet builds>
+---
+
+### Slide 05 — Assessing Question
+**Phase:** A — Assessing
+**Layout:** Takeaway card
+**Content:**
+- Large text: **"<Exact assessing question from the script>"**
+
+**Speaker cue:** Ask the question aloud. Collect 2–3 responses. Close the session.
+
+**Design Prompt:**
+> <Same energy as Slide 02 but slightly warmer — this is the close, not the opening. The question fills the slide. Consider a subtle color shift (slightly warmer background tone) to signal the loop is closing. No extra elements.>
+
+---
+
+### *(Slide 06 — optional closing slide)*
+**Phase:** Close
+**Layout:** <Title card or full-image>
+**Content:**
+- One resource, one sentence, or a memorable close line
+- Optional: QR code or URL
+
+**Speaker cue:** <How to use this slide.>
+
+**Design Prompt:** > <Brief.>
+
+---
+
+## Design System Summary
+
+**Fonts:** <Heading font + body font>
+**Colors:** Primary · Secondary · Background · Accent (with hex codes or clear descriptions)
+**Image style:** <e.g. flat vector / editorial photo / abstract graphic>
+**Transitions:** <e.g. simple cut / fade only — nothing distracting>
+**Slide ratio:** 16:9
 ```
 
 ---
 
 ## Quality Bar
 
-A good slides output:
-- Has one entry per slide — no vague placeholders like "content slides here"
-- Includes a speaker note for every slide (even if short)
-- Includes a specific, actionable design prompt for every slide (not "make it look nice")
-- Maintains a consistent design language described in the Design System Summary
-- Maps cleanly to the script: every script segment has at least one slide
-- Activity and debrief slides have clear, readable instruction text (not speaker-note-style prose)
-- The total slide count is realistic for the described duration
+A good slide blueprint for a 10-minute ARIVA workshop:
+- Has 5–7 slides maximum — no more
+- Each slide has a single dominant element (one question, one headline, one visual)
+- Speaker cues are for the facilitator, not the audience — they mark when to talk, when to wait, when to advance
+- The Verarbeitung slide (Slide 04) has the task written exactly as participants should hear it, with a visible timer element
+- The design prompts are specific enough that an AI design tool can act on them without asking for clarification
+- The visual system is described clearly enough that someone could extend the deck consistently

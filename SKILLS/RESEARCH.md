@@ -8,127 +8,197 @@
 
 ## Purpose
 
-Before anything else can be planned, written, or designed, Claude needs to deeply understand the workshop's subject matter. This skill is a structured research pass that surfaces the essential knowledge landscape — what the topic is really about, what learners at this level typically struggle with, what frameworks exist, and what references are worth pointing to.
+This is not a literature review. It is a facilitator brief calibrated to a 10-minute ARIVA workshop.
 
-The research output becomes the shared knowledge base that every subsequent skill draws from. Spend real effort here: thin research produces thin scripts and shallow learning goals.
+A 10-minute workshop can teach ONE concept well. The job of this research pass is to identify what that one concept is, find the best way to teach it in under 5 minutes, and design the three interactive moments around it: the reactivation hook (R), the processing task (V), and the assessing question (A).
+
+Everything you produce here feeds directly into the next four skills. Keep it sharp and practical.
 
 ---
 
 ## Inputs
 
-Read the following before starting:
-- `context/workshop_description.md` — workshop topic, audience, duration, and any stated goals
-- Any other files present in `context/` (reference materials, syllabi, prior workshop notes)
+Read before starting:
+- `context/workshop_description.md` — topic, audience, prior knowledge level, any stated goals
+- Any other files in `context/` (existing materials, readings, reference notes)
 
 ---
 
 ## What to Research
 
-Work through the following questions systematically. Use your training knowledge; if web search is available, use it for recency-sensitive topics (tools, libraries, current best practices).
+Work through each section below. The constraints are intentional — resist the urge to go wide.
 
-**1. Topic landscape**
-- What is this subject fundamentally about? State it in 2–3 sentences a non-expert could follow.
-- What are the 4–6 core concepts a learner must grasp to make sense of this topic?
-- How does this topic connect to adjacent fields or skills the audience already knows?
+---
 
-**2. Learner reality**
-- What level is the described audience starting from? What do they likely already know?
-- What are the most common misconceptions or mental model errors people have at this level?
-- What typically confuses or frustrates learners new to this topic?
+### 1. The One Teachable Concept
 
-**3. Frameworks and mental models**
-- What are the most useful frameworks, models, or heuristics for teaching this topic?
-- What analogies or metaphors help the concept land?
-- Are there canonical examples or case studies that make the abstract concrete?
+For a 10-minute workshop, you must identify the single most valuable, standalone concept within the topic. Ask:
+- What is the one idea that, if a participant understood it clearly after 10 minutes, would make this session worthwhile?
+- Can it be explained with one example or analogy in under 3 minutes? If not, it is too complex — find a smaller slice.
+- Does it connect to something the described audience already does or cares about?
 
-**4. Tools and resources**
-- What tools, technologies, or platforms are most relevant to this topic?
-- What are the 3–5 best references (books, papers, guides, courses) for learners who want to go deeper?
+State it in one sentence: **"The core concept is: ___"**
 
-**5. Workshop-specific considerations**
-- Given the described duration and audience, what scope is realistic?
-- What should definitely be covered? What is out of scope?
-- What hands-on activities or exercises are typically effective for this topic?
+---
+
+### 2. The Best Way to Explain It (Informing phase)
+
+Find the one explanation, analogy, or example that makes this concept click for this specific audience. Avoid abstract definitions — find the concrete version.
+
+Ask:
+- What is the most vivid real-world example of this concept in action?
+- What analogy would land for this audience specifically (given their background and context)?
+- What is the single most important thing to say? What would you cut if you only had 2 minutes?
+
+---
+
+### 3. Reactivation Hook (R phase)
+
+The reactivation question connects the new concept to something participants already know or have experienced. It also tells the facilitator how experienced the group is.
+
+Design one question that:
+- Anyone in the room can answer (no expert knowledge required)
+- Takes 30 seconds or less per person to answer
+- Surfaces a range of prior experience in the room
+- Leads naturally into the Informing phase
+
+Good reactivation formats for 10-minute workshops: a show of hands, a quick word-shout, one sentence each, a 5-second silent reflection followed by one volunteer.
+
+---
+
+### 4. Verarbeitung Task (V phase) — Processing
+
+This is where learning actually happens. In 2–3 minutes, participants must do something active with the concept — not just hear it.
+
+Design one micro-task that:
+- Can be started and completed in 2–3 minutes
+- Works in any group configuration (pairs, trios, or solo reflection)
+- Asks participants to apply the concept to something real in their own context
+- Produces a concrete output (a word, a sentence, a decision, a question)
+
+Good formats: turn-and-talk prompt, one-sentence reflection written on paper, micro-decision exercise, map-it-to-your-context prompt.
+
+---
+
+### 5. Assessing Question (A phase)
+
+One question that closes the loop on the ILO. The facilitator asks it in the final 60 seconds. The answer reveals whether the concept landed.
+
+Design a question that:
+- Has a concrete, specific answer (not "what did you learn?")
+- Maps directly to the ILO from Skill 02
+- Can be answered in one sentence per person
+- Works as a quick show of hands OR a one-word shout-out if time is tight
+
+---
+
+### 6. Common Misconceptions (1–2 only)
+
+What do people at this audience's level typically get wrong about this concept? Keep this to 1–2 — the facilitator needs to know what to watch for during the Informing and Verarbeitung phases, not a comprehensive error catalogue.
+
+---
+
+### 7. Prior Knowledge Assessment
+
+Based on the workshop description, what level of prior knowledge can the facilitator expect? Give a honest 1-sentence read:
+- "Most participants will likely have zero exposure to this concept."
+- "Participants probably know the term but misunderstand how it works."
+- "The group will have varied experience — the reactivation question should reveal the spread."
+
+This directly informs how the R phase is run.
 
 ---
 
 ## Output Template
 
-Write the output exactly in this structure. Use real content — no placeholders.
-
 ```markdown
-# Research: <Workshop Title>
+# Research Brief: <Workshop Title>
 
 **Generated by:** Skill 01 — Research
 **Workshop slug:** <slug>
-**Source description:** context/workshop_description.md
+**Format:** 10-minute ARIVA workshop
 
 ---
 
-## Topic Overview
+## The One Teachable Concept
 
-<2–4 paragraph synthesis of what this topic is, why it matters, and how it fits into the broader landscape. Written for a facilitator who may not be a deep expert.>
+**Core concept (one sentence):**
+> <State it clearly. This becomes the heart of the Informing phase.>
 
----
+**Best explanation for this audience:**
+<The analogy, example, or story that makes it land. Concrete and specific to the audience.>
 
-## Core Concepts
-
-<List of 4–6 core concepts, each with a 2–3 sentence explanation. These will become the backbone of the learning goals and script.>
-
-1. **<Concept name>** — <explanation>
-2. **<Concept name>** — <explanation>
-...
+**The one thing to say (if you had 2 minutes):**
+> <Distilled version. This is the "spine" of the Informing phase.>
 
 ---
 
-## Common Misconceptions
+## Reactivation Hook (R phase — 1–2 min)
 
-<List of 3–5 misconceptions or mental model errors typical for this audience level. Include a brief note on how to correct each one.>
+**Question:**
+> <The one question to ask the group at the start of the Informing phase.>
 
-- **Misconception:** <what learners often wrongly believe>
-  **Reality:** <what is actually true>
+**Format:** <Show of hands / word-shout / one-sentence-each / quick poll>
 
----
-
-## Useful Frameworks & Mental Models
-
-<2–4 frameworks, models, or analogies that are effective for teaching this topic. Explain why each one works pedagogically.>
+**What to listen for:** <What the answers reveal about the group's prior knowledge — and how to adjust the Informing phase based on what you hear.>
 
 ---
 
-## Relevant Tools & Technologies
+## Verarbeitung Task (V phase — 2–3 min)
 
-<If the topic involves tools or platforms, list the key ones with a one-line description of their role. If not applicable, write "N/A".>
+**Task prompt:**
+> <Exactly what participants are asked to do. Must be startable in under 30 seconds.>
+
+**Format:** <Pairs / solo reflection / small groups>
+
+**Output from participants:** <What they produce — a word, a sentence, a decision, a question.>
+
+**How to close the task:** <One sentence the facilitator says to bring the group back and transition to Assessing.>
 
 ---
 
-## Recommended References
+## Assessing Question (A phase — ~1 min)
 
-<3–5 references (books, articles, courses, docs) with title, author/source, and a one-sentence description of what they offer.>
+**Question:**
+> <The one concrete question tied directly to the ILO.>
+
+**Format:** <Show of hands / one word each / sentence completion / quick vote>
+
+**What "success" looks like:** <What response tells the facilitator the concept landed.>
 
 ---
 
-## Scope Recommendations
+## Common Misconceptions (watch for these)
 
-**Realistic for this duration/audience:**
-<What can genuinely be covered well given the constraints.>
+1. **Misconception:** <What participants often wrongly believe>
+   **Reality:** <What's actually true — one sentence correction>
 
-**Out of scope (save for follow-up sessions):**
-<What is too advanced or too tangential to include.>
+2. **Misconception:** <If applicable>
+   **Reality:** <Correction>
 
-**High-value activities:**
-<2–3 exercise or activity formats that tend to work well for this topic and audience.>
+---
+
+## Prior Knowledge Read
+
+<One honest sentence about the expected prior knowledge level of this group, and how it should shape the R phase.>
+
+---
+
+## What Is Out of Scope
+
+<1–3 related concepts or questions that will likely come up but are NOT covered in this 10-minute session. The facilitator needs to be ready to park these: "Great question — that's out of scope today, but worth exploring after.">
 ```
 
 ---
 
 ## Quality Bar
 
-A good research output:
-- Is specific to the described topic and audience, not generic
-- Includes at least 4 well-explained core concepts
-- Lists at least 3 distinct misconceptions with corrections
-- Provides at least one concrete analogy or mental model
-- Makes a clear recommendation about what's in/out of scope for this workshop
+A good research output for a 10-minute workshop:
+- Has exactly ONE teachable concept — not three "related" ones
+- Has a reactivation question that anyone in the room can answer
+- Has a Verarbeitung task that can be set up in one sentence and completed in 2–3 minutes
+- Has an assessing question that is concretely answerable (not open-ended)
+- Lists no more than 2 misconceptions
+- Identifies out-of-scope topics the facilitator should be ready to park
 
-If you feel the workshop description is too vague to produce good research, add a `> **Note:**` block at the top of the output file describing what additional information would sharpen the research.
+If the workshop description names a topic that is too large for 10 minutes, use this research pass to propose a focused slice. Note the choice at the top of the output file.

@@ -8,54 +8,56 @@
 
 ## Purpose
 
-Learning goals are the contract between the facilitator and the learner. They answer: *"After this workshop, what will I be able to do that I couldn't before?"* Without clear, measurable goals, a workshop is just a talk. With them, it becomes a designed learning experience.
+A 10-minute workshop has room for exactly **one Intended Learning Outcome (ILO)**. Not three. Not a primary plus two sub-goals. One.
 
-This skill translates the research and workshop description into a tight set of objectives that are specific, realistic for the time available, and anchored to a clear cognitive level using Bloom's Taxonomy.
+This skill defines that ILO with precision — anchored to the right Bloom's level, honest about what 10 minutes can genuinely achieve, and phrased so the facilitator can state it in the Arrival phase and a participant can verify it for themselves in the Assessing phase.
+
+The ILO is the spine of the entire workshop. Every ARIVA phase exists to serve it.
 
 ---
 
 ## Inputs
 
-Read the following before starting:
+Read before starting:
 - `context/workshop_description.md`
-- `projects/<slug>/01_research.md` — pay close attention to Core Concepts and Scope Recommendations
+- `projects/<slug>/01_research.md` — especially "The One Teachable Concept" and the Assessing Question
 
 ---
 
 ## Bloom's Taxonomy Reference
 
-Each learning objective must be anchored to a level. Choose the right one for the audience and depth:
+Pick ONE level. For a 10-minute introductory session, **Understand** or **Apply** is almost always the right choice. Only use higher levels if the workshop description explicitly targets an experienced audience doing active work.
 
-| Level | Verb examples | What it means |
+| Level | Verb examples | Right for 10 min? |
 |---|---|---|
-| **Remember** | define, list, recall, identify | Retrieve from memory |
-| **Understand** | explain, summarize, paraphrase, classify | Make sense of information |
-| **Apply** | use, demonstrate, execute, solve | Use knowledge in a new situation |
-| **Analyze** | compare, differentiate, examine, break down | Break into components, find relationships |
-| **Evaluate** | judge, critique, justify, assess | Make informed judgments |
-| **Create** | design, build, compose, generate | Produce something new |
-
-Most introductory workshops operate at **Understand** and **Apply**. Advanced workshops reach **Analyze**, **Evaluate**, and **Create**. Match the level to the audience and duration — being honest about this is more useful than being aspirational.
+| **Remember** | define, list, recall, identify | Yes — if the concept is genuinely new vocabulary |
+| **Understand** | explain, summarize, paraphrase, distinguish | Yes — the most common right answer |
+| **Apply** | use, demonstrate, solve, apply to | Yes — if the Verarbeitung task is hands-on |
+| **Analyze** | compare, differentiate, examine | Only with experienced audience |
+| **Evaluate** | judge, critique, justify | Rarely achievable in 10 min |
+| **Create** | design, build, generate | Not in 10 min |
 
 ---
 
-## What to Define
+## Writing the ILO
 
-**1. The primary learning goal**
-One sentence that captures the single most important outcome. If a learner only takes away one thing, what is it? This should be memorable, audience-facing, and honest about scope.
+A well-formed ILO:
+1. Starts with "By the end of this workshop, participants will be able to..."
+2. Uses a single Bloom's verb (not "understand and apply" — pick one)
+3. Names the specific concept from the research
+4. Is testable — the Assessing question should directly check it
 
-**2. Specific objectives (4–6)**
-Concrete, measurable statements using Bloom's verbs. Each objective should:
-- Start with a Bloom's verb at the appropriate level
-- Be testable (could you design an exercise that checks this?)
-- Map to a specific concept from the research
-- Be achievable within the workshop's time constraint
+**Good ILO examples:**
+> "By the end of this workshop, participants will be able to **explain** what a feedback loop is and identify one example in their own work."
 
-**3. Success indicators**
-How would a facilitator know the goals were met? Think about signals during and after the workshop: questions learners ask, exercises they complete, things they say or do.
+> "By the end of this workshop, participants will be able to **distinguish** between active listening and passive listening in a conversation."
 
-**4. Out-of-scope clarifications**
-Explicitly state 2–3 things that are NOT goals of this workshop. This protects scope and sets honest expectations.
+> "By the end of this workshop, participants will be able to **apply** the concept of psychological safety to name one specific change they could make in their team."
+
+**Bad ILO examples (and why):**
+- "Participants will understand feedback loops" — "understand" alone is not a Bloom's verb, and it's not testable
+- "Participants will know more about communication" — too vague, no concept, not testable
+- "Participants will understand, apply, and analyze the concept" — three levels in 10 minutes is magical thinking
 
 ---
 
@@ -66,78 +68,72 @@ Explicitly state 2–3 things that are NOT goals of this workshop. This protects
 
 **Generated by:** Skill 02 — Learning Goals
 **Workshop slug:** <slug>
-**Bloom's level(s):** <primary level(s) this workshop targets>
+**Bloom's level:** <single level>
+**ARIVA format:** 10-minute workshop
 
 ---
 
-## Primary Learning Goal
+## Intended Learning Outcome (ILO)
 
 By the end of this workshop, participants will be able to:
 
-> <One clear, audience-facing sentence. Use a Bloom's verb. Make it ambitious but honest.>
+> **<Bloom's verb>** <specific concept> <context or application — optional but strengthens it>
 
 ---
 
-## Specific Objectives
+## Why This ILO
 
-By the end of this workshop, participants will be able to:
-
-1. **[<Bloom's level>]** <Objective — specific and measurable.>
-2. **[<Bloom's level>]** <Objective — specific and measurable.>
-3. **[<Bloom's level>]** <Objective — specific and measurable.>
-4. **[<Bloom's level>]** <Objective — specific and measurable.>
-5. **[<Bloom's level>]** <Objective — specific and measurable.> *(if applicable)*
-6. **[<Bloom's level>]** <Objective — specific and measurable.> *(if applicable)*
+<2–3 sentences justifying the choice of Bloom's level and scope for this audience and duration. Be honest — explain what the 10-minute format can and cannot achieve.>
 
 ---
 
-## Research Mapping
+## How the ILO Maps to ARIVA
 
-<Brief table showing which objective maps to which core concept from the research.>
-
-| Objective | Core Concept from Research |
+| Phase | What it does for the ILO |
 |---|---|
-| Objective 1 | <concept name> |
-| Objective 2 | <concept name> |
+| **A — Arrival** | Announces the ILO directly to participants |
+| **R — Reactivating** | Activates prior knowledge that the ILO builds on |
+| **I — Informing** | Delivers the concept the ILO is about |
+| **V — Verarbeitung** | Gives participants a chance to practice or apply the ILO |
+| **A — Assessing** | Checks whether participants achieved the ILO |
 
 ---
 
-## Success Indicators
+## Assessing Question
 
-A facilitator can consider the goals met if participants:
+The ILO is checked in the final 60 seconds with this question:
 
-- <Observable signal during the workshop>
-- <Observable signal during the workshop>
-- <Observable signal in a post-workshop exercise or conversation>
-- <Something participants say or produce that shows internalization>
+> <The assessing question from 01_research.md — confirm it maps cleanly to the ILO above. Adjust if needed.>
+
+A participant has met the ILO if: <what a correct or meaningful response looks like — one sentence.>
 
 ---
 
 ## What This Workshop Does NOT Cover
 
-To keep scope honest, the following are explicitly out of scope:
+To protect the 10-minute scope, the following are explicitly out of scope:
 
-- <Topic or skill that is adjacent but not covered>
-- <Topic that would require more time or prerequisites>
-- <Topic the audience might expect but won't find here>
+- <Related concept that is tempting to include but doesn't fit>
+- <Depth or application that requires more time or prerequisites>
+- <Adjacent topic that participants may ask about — facilitator should be ready to park it>
 
 ---
 
 ## Facilitator Note
 
-<1–2 sentences on the pedagogical intent: why these goals were chosen at this Bloom's level for this audience.>
+<One sentence for the facilitator about how to use the ILO in the Arrival phase — how to state it clearly and memorably so participants know exactly what success looks like before the session begins.>
 ```
 
 ---
 
 ## Quality Bar
 
-A good learning goals output:
-- Has a primary goal that a non-expert could read and immediately understand
-- Includes 4–6 objectives, each starting with a distinct Bloom's verb
-- Has objectives at a realistic Bloom's level for the described audience
-- Maps every objective back to a concept from the research
-- Lists at least 2 clear out-of-scope items
-- Has at least 3 concrete, observable success indicators
+A good learning goals output for a 10-minute workshop:
+- Has exactly ONE ILO — no sub-objectives
+- Uses a single, specific Bloom's verb
+- Is phrased so a participant could read it and know exactly what they'll be able to do at the end
+- Maps clearly to an assessing question that could check it in 60 seconds
+- Lists at least 2 out-of-scope items (this protects the facilitator from scope creep on the day)
+- Is honest about Bloom's level — "understand" is fine if that's what 10 minutes can deliver
 
-Avoid vague verbs like "understand", "appreciate", "learn about", "be aware of" — these are not measurable. Replace them with specific Bloom's verbs.
+If the workshop description implies multiple ILOs, pick the most important one. Note the others in the out-of-scope section and flag that they would require additional sessions.

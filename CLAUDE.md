@@ -1,22 +1,36 @@
 # Workshop Generator — Claude Orchestration Guide
 
-This project turns a short workshop description into a complete, structured workshop package through a sequence of five skills. Each skill builds on the previous one, and every output is saved as a clean Markdown file inside a dedicated project folder.
+This project generates a complete, ready-to-run **10-minute workshop** following the **ARIVA framework**. Each stage builds on the previous one and is saved as a structured Markdown file in a dedicated project folder.
+
+---
+
+## The ARIVA Framework
+
+Every workshop this generator produces follows ARIVA — a research-based structure for short, high-engagement learning sessions. The timing is fixed for a 10-minute format:
+
+| Phase | Name | Duration | Purpose |
+|---|---|---|---|
+| **A** | Arrival | ~60 sec | Orient participants. Name, topic, ILO. Nothing else. |
+| **R** | Reactivating | 1–2 min | Connect the new concept to what they already know. One question. |
+| **I** | Informing | 4–5 min | One core idea only. Examples, not theory. Maximum attention before it drops. |
+| **V** | Verarbeitung | 2–3 min | Participants actively process: one micro-task or paired discussion. |
+| **A** | Assessing | ~1 min | Close the loop: did they get it? One concrete question tied to the ILO. |
+
+**Critical constraint:** A 10-minute workshop covers ONE concept and produces ONE Intended Learning Outcome (ILO). If it takes more than 10 minutes to explain, it is not this format.
 
 ---
 
 ## How to Start
 
-1. The user has placed a workshop description in the `context/` folder (typically `context/workshop_description.md`).
+1. The user has placed a workshop description in the `context/` folder (`context/workshop_description.md`).
 2. Read that file first. Everything flows from it.
-3. Derive a **workshop slug** from the title: lowercase, spaces replaced with underscores (e.g. `intro_to_machine_learning`).
+3. Derive a **workshop slug** from the title: lowercase, spaces replaced with underscores (e.g. `feedback_loops`).
 4. Create the output folder: `projects/<workshop-slug>/`
 5. Run each skill in order, saving its output before moving to the next.
 
 ---
 
 ## Workflow Sequence
-
-Run each skill by reading its instruction file from `SKILLS/`. After completing each skill, write its output to the project folder as a structured Markdown file before starting the next skill. Do not skip stages — each skill feeds into the next.
 
 ```
 SKILL 01 → SKILLS/RESEARCH.md          → projects/<slug>/01_research.md
@@ -30,17 +44,16 @@ SKILL 05 → SKILLS/FINALIZE.md          → projects/<slug>/FINAL_<slug>.md
 
 ## Rules for Every Skill
 
-- **Read the skill file** (`SKILLS/<SKILL>.md`) before executing each stage — it contains the specific instructions, format requirements, and output template.
-- **Pass context forward**: each skill should have access to the workshop description AND all previously generated output files. Read them before starting.
-- **Save immediately**: write the output file as soon as a skill is complete, before starting the next stage.
-- **Announce progress**: after saving each file, tell the user which stage just completed and what file was written.
+- **Read the skill file** (`SKILLS/<SKILL>.md`) before executing each stage.
+- **Pass context forward**: each skill reads the workshop description AND all previously generated outputs.
+- **Save immediately**: write the output file before starting the next stage.
+- **Announce progress**: tell the user which stage just completed and what file was written.
 - **Do not ask for confirmation between stages** unless a skill explicitly instructs it. Run the full pipeline autonomously.
+- **Ruthlessly respect the 10-minute constraint**: if content doesn't fit, cut it — do not expand the scope.
 
 ---
 
 ## Project Folder Structure
-
-After a full run, the project folder should look like this:
 
 ```
 projects/
@@ -52,43 +65,33 @@ projects/
     └── FINAL_<workshop-slug>.md
 ```
 
-The `FINAL_` file is the deliverable. It combines all skill outputs into one cohesive, ready-to-use workshop document.
+The `FINAL_` file is the deliverable — a single document the facilitator can open and run from.
 
 ---
 
 ## Deriving the Workshop Slug
 
-From the workshop description, extract the workshop title. Then:
+From the workshop topic, extract a short slug:
 - Lowercase everything
-- Replace spaces and special characters with underscores
+- Replace spaces with underscores
 - Strip punctuation
-- Keep it short (3–5 words max)
+- 2–4 words max
 
 **Examples:**
-- "Introduction to Machine Learning for Designers" → `intro_machine_learning_designers`
-- "Prompt Engineering Basics" → `prompt_engineering_basics`
-- "How to Run Effective Retrospectives" → `effective_retrospectives`
+- "The Power of Active Listening" → `active_listening`
+- "How Feedback Loops Work" → `feedback_loops`
+- "What is Psychological Safety?" → `psychological_safety`
 
 ---
 
 ## Context Folder
 
-The `context/` folder is where the user places inputs. At minimum it should contain:
-
-- `context/workshop_description.md` — a short description of the workshop (topic, audience, duration, goals)
-
-If the user places additional reference files in `context/` (e.g. existing materials, a syllabus, competitor research), read those too and use them to enrich the skill outputs.
-
----
-
-## Skills Reference
-
-See `SKILLS.md` for a human-readable overview of what each skill does. See the individual skill files in `SKILLS/` for the full execution instructions.
+`context/workshop_description.md` is the only required input. If the user places additional reference files there (prior notes, a reading, existing materials), read them too.
 
 ---
 
 ## Error Handling
 
-- If `context/workshop_description.md` is missing or empty, stop and ask the user to add it before proceeding.
-- If a skill output seems incomplete or too short, note it in a comment at the top of the output file and continue — do not abort the pipeline.
-- If the `projects/` directory doesn't exist, create it.
+- If `context/workshop_description.md` is missing or empty — stop and ask the user to fill it in.
+- If a skill output seems too long or tries to cover multiple concepts — flag it and trim back to one core idea.
+- If the `projects/` directory doesn't exist — create it.

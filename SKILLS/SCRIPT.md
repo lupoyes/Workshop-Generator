@@ -8,188 +8,207 @@
 
 ## Purpose
 
-A script turns a workshop plan into something a real facilitator can hold in their hands and run. It is not a transcript — it is a structured facilitation guide with timed segments, speaker notes, transition phrases, activity instructions, and check-in moments.
+This skill writes the complete facilitation script for a 10-minute ARIVA workshop. Every phase has a hard time budget. Every word of speaker notes should be something a facilitator can say naturally, without reading robotically from a screen.
 
-The script should be specific enough that someone who didn't design the workshop could facilitate it. At the same time it should feel alive — not robotic. It should reflect the audience's level, the pacing that suits the duration, and the learning goals defined in Stage 02.
+The script is structured around the ILO from Skill 02 and the interactive moments from Skill 01. It is not a lecture outline — it is a facilitation guide where most of the time is spent in interaction, not transmission.
 
 ---
 
 ## Inputs
 
-Read the following before starting:
-- `context/workshop_description.md` — topic, audience, duration, any special instructions
-- `projects/<slug>/01_research.md` — core concepts, frameworks, examples, scope recommendations
-- `projects/<slug>/02_learning_goals.md` — primary goal, specific objectives, success indicators
-
-Every segment of the script should serve at least one of the learning objectives. If a segment doesn't connect to an objective, cut it or reframe it.
+Read before starting:
+- `context/workshop_description.md` — topic, audience, format (in-person/virtual), group size
+- `projects/<slug>/01_research.md` — reactivation hook, Verarbeitung task, assessing question, the one core concept and its best explanation
+- `projects/<slug>/02_learning_goals.md` — the single ILO and Bloom's level
 
 ---
 
-## Script Architecture
+## ARIVA Timing Budget
 
-Structure the script using this session flow. Adjust timing to fit the described duration — the percentages are guides, not rules.
+This is the fixed structure. Every phase has a strict time ceiling. Write speaker notes that fit inside it — do not expand.
 
-| Segment | Purpose | Rough % of time |
-|---|---|---|
-| **Opening** | Welcome, agenda, why this matters | 5–10% |
-| **Context Setting** | What do learners already know? What are we here to do? | 5–10% |
-| **Core Content Block(s)** | Main teaching — concepts, frameworks, examples | 40–50% |
-| **Activity / Practice** | Learners apply or engage, not just receive | 20–30% |
-| **Debrief** | Synthesize what happened in the activity | 10–15% |
-| **Closing** | Recap, next steps, resources, Q&A | 5–10% |
+```
+A  Arrival          ~60 sec     ← orientation only, state the ILO
+R  Reactivating     1–2 min     ← one question, collect responses, bridge
+I  Informing        4–5 min     ← one concept, one example, one analogy
+V  Verarbeitung     2–3 min     ← one task, timer, share one response
+A  Assessing        ~1 min      ← one question, responses, close
+─────────────────────────────
+                   ~10 min
+```
 
-For longer workshops (>3 hours), include breaks and repeat the Content + Activity pattern for each learning objective.
-
----
-
-## What Each Segment Needs
-
-**Every segment should include:**
-- A clear segment title and the time allocation (e.g. `[10 min]`)
-- The **objective** it serves (reference from Stage 02)
-- **Speaker notes** — what the facilitator says, written in second person ("You can start by asking...")
-- Any **slides or visual cues** to reference (e.g. "Show Slide 4 here")
-- A **transition** — one sentence that bridges to the next segment
-
-**Activity segments also need:**
-- Step-by-step instructions the facilitator reads or hands out
-- What the facilitator does while participants work
-- What to watch for (signs the activity is working / not working)
-- Debrief questions
+**Hard rules:**
+- The Informing phase must not exceed 5 minutes. If the concept needs longer, it is too big for this format.
+- The Verarbeitung phase must have a clear task and a visible or called timer.
+- The Assessing phase must ask one question that maps directly to the ILO — not "what did you learn?" but something specific and answerable.
 
 ---
 
-## Tone and Voice
+## Writing Speaker Notes
 
-- Write speaker notes in second person ("You say...", "Ask the group...", "Pause here...")
-- Match the tone to the audience: casual for creative/startup contexts, precise for technical or academic ones
-- Avoid academic language in speaker notes — facilitators should be able to read them naturally
-- Highlight key moments with `> **Facilitator cue:**` blocks
+- Write in second person: "You say...", "Ask...", "Pause here...", "Listen for..."
+- Include exact phrasing for transitions between phases — these are the moments facilitators fumble
+- Mark timing cues clearly: `[0:00]`, `[1:00]`, `[5:30]`, etc.
+- Use `> **Cue:**` blocks for important moments — things the facilitator must not forget
+- Note what to do if the group is silent, too fast, or too verbose
 
 ---
 
 ## Output Template
 
 ```markdown
-# Workshop Script: <Workshop Title>
+# ARIVA Script: <Workshop Title>
 
 **Generated by:** Skill 03 — Script Generation
 **Workshop slug:** <slug>
-**Total duration:** <X hours / X minutes>
-**Audience:** <description from context>
-
----
-
-## Session Overview
-
-<2–3 sentence summary of the arc of this session: where it starts, what the big move is, where it ends.>
-
-**Learning objectives served by this script:**
-1. <objective 1>
-2. <objective 2>
-... (copy from 02_learning_goals.md)
+**Duration:** 10 minutes
+**Format:** <in-person / virtual / hybrid>
+**Audience:** <from context>
+**ILO:** <copy exactly from 02_learning_goals.md>
 
 ---
 
 ## Agenda at a Glance
 
-| Time | Segment | Duration |
-|---|---|---|
-| 0:00 | Opening & Welcome | X min |
-| 0:XX | Context Setting | X min |
-| 0:XX | <Core Content Block 1> | X min |
-| 0:XX | Activity: <Name> | X min |
-| 0:XX | Debrief | X min |
-| 0:XX | <Core Content Block 2> | X min |  ← repeat as needed
-| 0:XX | Closing & Next Steps | X min |
+| Phase | Name | Time | What happens |
+|---|---|---|---|
+| A | Arrival | 0:00–1:00 | Name, topic, ILO |
+| R | Reactivating | 1:00–2:30 | One question to the group |
+| I | Informing | 2:30–7:00 | One concept, one example |
+| V | Verarbeitung | 7:00–9:30 | One micro-task |
+| A | Assessing | 9:30–10:00 | One question, close |
+
+*(Adjust exact timestamps to fit your pacing — total must stay at 10 min.)*
 
 ---
 
-## Detailed Script
+## Full Script
 
 ---
 
-### Opening & Welcome [X min]
-**Objective served:** Sets the stage; activates prior knowledge
+### A — Arrival [0:00–1:00]
 
-**Speaker notes:**
-> Welcome everyone. Today we're going to <one-sentence description of what we're doing and why it matters for them specifically>.
+**Purpose:** Get participants mentally present. Orient them: who you are, what this is, what they'll be able to do at the end. Nothing else.
 
-<Continue with full speaker notes for this segment. Include what to say, what to ask, what to watch for.>
+> **Script:**
+> "Hi, I'm [name]. In the next 10 minutes, we're going to look at **<topic>**. By the end, you'll be able to **<ILO stated in plain language>**. Let's go."
 
-> **Facilitator cue:** <Any important timing, energy, or group-management note>
+> **Cue:** State the ILO out loud, clearly. Participants should be able to repeat it back. Don't add context, backstory, or agenda details — there's no time.
 
-**Transition:** <One sentence bridging to the next segment.>
-
----
-
-### Context Setting [X min]
-**Objective served:** <Which objective(s)>
-
-**Speaker notes:**
-<Full notes. Include any warm-up question to ask the group, how to read the room, what to do if people are quiet.>
-
-**Transition:** <Bridge sentence.>
+**Transition:** Move immediately into the first question. No pause.
 
 ---
 
-### <Core Content Block 1: Concept/Framework Name> [X min]
-**Objective served:** <Which objective(s)>
+### R — Reactivating [1:00–2:30]
 
-**Speaker notes:**
-<Full notes. Cover the concept clearly. Include the analogy or mental model from the research. Include at least one concrete example.>
+**Purpose:** Connect the concept to what participants already know. Read the room. Tell them why you're asking.
 
-> **Facilitator cue:** <Check-in question to ask mid-way through this block.>
+> **Script:**
+> "Before we get into it — <reactivation question from 01_research.md>."
+>
+> *(Collect responses — show of hands / shout-out / one word each.)*
+>
+> "Good. <Brief bridge: acknowledge what you heard, connect it to what's coming.> That's exactly what we're going to dig into."
 
-**Transition:** <Bridge sentence.>
+> **Cue:** This question also tells you how experienced your group is. If most hands go up, you can move faster in the Informing phase. If almost no hands go up, slow down and make the first example even more concrete.
 
----
+**Watch for:** Silence. If no one responds, say: "Even a guess is useful — what comes to mind when you hear the word <concept>?"
 
-### Activity: <Activity Name> [X min]
-**Objective served:** <Which objective(s)>
-
-**Setup:**
-<How to introduce the activity — what the facilitator says to set it up.>
-
-**Instructions (read aloud or display):**
-1. <Step 1>
-2. <Step 2>
-3. <Step 3>
-
-**While participants work:**
-<What the facilitator does — walk the room, listen in, note themes to surface in debrief.>
-
-**Watch for:**
-- <Sign the activity is going well>
-- <Sign participants are stuck — and what to do>
-
-**Debrief questions:**
-- <Question to open the debrief>
-- <Question to go deeper>
-- <Question to synthesize>
-
-**Transition:** <Bridge sentence.>
+**Transition:** "Here's what I want to share about this..."
 
 ---
 
-### Closing & Next Steps [X min]
-**Objective served:** Consolidation; call to action
+### I — Informing [2:30–7:00]
 
-**Speaker notes:**
-<Full notes for the close. Include a brief recap of the session arc, 2–3 concrete next steps participants can take, and how to point them to the recommended references from the research.>
+**Purpose:** Deliver one concept clearly. Use examples, not definitions. This is the only time you're doing direct transmission — keep it short and memorable.
 
-**Final question to leave the room with:**
-> <One memorable question or provocation they'll think about after leaving.>
+**The concept (from 01_research.md):**
+> <Core concept in one sentence — the spine of this phase.>
+
+> **Script:**
+> "<Start with the best example or analogy from the research. Make it concrete and immediate.>
+>
+> <Explain the concept in one or two sentences. Not a dictionary definition — the version that makes it click.>
+>
+> <Give one real-world application relevant to this audience.>"
+
+> **Cue:** You have 4–5 minutes. If you notice yourself adding a second concept — stop. Park it. The one concept must land before you move on.
+
+> **Cue:** At around 6:00, check in: "Does this make sense so far? Any quick questions before we try it?" Take one question max, then move.
+
+**Transition:** "Now I want you to try something."
+
+---
+
+### V — Verarbeitung [7:00–9:30]
+
+**Purpose:** Participants actively work with the concept. This is where learning actually happens. Your job is to set up the task clearly, start the timer, and get out of the way.
+
+**The task (from 01_research.md):**
+> <Verarbeitung task — what participants do, in one sentence.>
+
+> **Script:**
+> "Here's what I want you to do. You have **2 minutes**. <Task prompt — stated exactly as participants should hear it.>
+>
+> *(Start timer visibly or call it out.)*
+>
+> Go."
+
+> **Cue:** While they work, listen in. Note 1–2 responses you'll want to surface in the Assessing phase. Don't interrupt.
+
+> **Cue:** At the 2-minute mark: "30 seconds left — wrap up your thought."
+
+**To close the task:**
+> "Time. <Name one person or invite one volunteer.> What did you come up with?"
+> *(Take 1–2 responses. Keep it brief — there's 30 seconds to go.)*
+
+**Transition:** "Last question before we finish."
+
+---
+
+### A — Assessing [9:30–10:00]
+
+**Purpose:** Close the loop on the ILO. Check whether the concept landed. This is not a debrief — it's a single, direct question.
+
+**The question (from 01_research.md):**
+> <Assessing question — stated exactly.>
+
+> **Script:**
+> "<Assessing question>."
+>
+> *(Collect responses — show of hands / one word / sentence completion.)*
+>
+> "Perfect. <One-sentence synthesis or affirmation of what you heard.>"
+>
+> "That's it. You've just done 10 minutes on <concept>. <Optional: one sentence on where to go next, if relevant.>"
+
+> **Cue:** If responses reveal the concept didn't land, don't re-teach it — there's no time. Acknowledge it: "This one takes a bit to settle. The best next step is to look for it in the wild this week." Then close.
+
+---
+
+## Contingency Notes
+
+**If the group is too fast (finishes Verarbeitung in 1 minute):**
+> Ask a second question during Assessing: "Who can give me an example they haven't heard yet?"
+
+**If the group is too slow (Verarbeitung runs over):**
+> Cut the Assessing to one show-of-hands question only: "Hands up if you were able to apply this to your own context."
+
+**If someone asks a deep question during Informing:**
+> "Great question — that's beyond today's scope. Let me park it and come back to it after." Write it on a sticky note or whiteboard.
+
+**If the group is very experienced and already knows the concept:**
+> Acknowledge it immediately after Reactivating: "Sounds like most of you have encountered this. Good — then our Verarbeitung is going to be about sharpening how you use it, not learning it from scratch."
 ```
 
 ---
 
 ## Quality Bar
 
-A good script:
-- Has enough speaker notes that a confident facilitator unfamiliar with the topic could run it
-- Includes at least one activity with full instructions (not just "do a group exercise")
-- Has at least 3 debrief questions
-- Connects every content block back to a specific learning objective
-- Feels like a real session arc — energy builds, there's a clear climax, and a clean landing
-- Is calibrated to the described duration (no segment is unrealistically long or short)
+A good script for a 10-minute ARIVA workshop:
+- Has speaker notes for every phase that a facilitator could read naturally
+- States the ILO word-for-word in the Arrival phase
+- Uses the exact reactivation question, Verarbeitung task, and assessing question from the research
+- Has a visible timer cue in the Verarbeitung phase
+- Has contingency notes for at least 2 scenarios (too fast, too slow)
+- Does NOT include a second concept, a recap slide, or extended Q&A — these don't fit
