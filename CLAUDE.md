@@ -38,7 +38,10 @@ SKILL 02 → SKILLS/LEARNING_GOALS.md    → projects/<slug>/02_learning_goals.m
 SKILL 03 → SKILLS/SCRIPT.md            → projects/<slug>/03_script.md
 SKILL 04 → SKILLS/SLIDES.md            → projects/<slug>/04_slides.md
 SKILL 05 → SKILLS/FINALIZE.md          → projects/<slug>/FINAL_<slug>.md
+SKILL 06 → SKILLS/EXPORT_JSON.md       → projects/<slug>/workshop.json + projects/index.json
 ```
+
+Skill 06 runs automatically after Skill 05 completes. It is not optional.
 
 ---
 
@@ -57,15 +60,17 @@ SKILL 05 → SKILLS/FINALIZE.md          → projects/<slug>/FINAL_<slug>.md
 
 ```
 projects/
+├── index.json                        ← manifest of all workshops (updated by Skill 06)
 └── <workshop-slug>/
     ├── 01_research.md
     ├── 02_learning_goals.md
     ├── 03_script.md
     ├── 04_slides.md
-    └── FINAL_<workshop-slug>.md
+    ├── FINAL_<workshop-slug>.md
+    └── workshop.json                 ← structured export (written by Skill 06)
 ```
 
-The `FINAL_` file is the deliverable — a single document the facilitator can open and run from.
+The `FINAL_` file is the facilitator deliverable. `workshop.json` powers the frontend.
 
 ---
 
