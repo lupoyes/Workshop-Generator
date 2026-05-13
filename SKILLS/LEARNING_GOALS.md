@@ -1,4 +1,18 @@
-# Skill 02 — Learning Goals
+---
+name: learning-goals-generator
+description: >
+  Generates a single, precise Intended Learning Outcome (ILO) for a 10-minute workshop,
+  anchored to the correct Bloom's taxonomy level and mapped to the ARIVA format.
+  Trigger this skill whenever the agent needs to produce or update learning goals for
+  a workshop — especially when context/workshop_description.md and a 01_research.md
+  file are present, or when the user asks to "generate learning goals", "define the ILO",
+  "set up learning objectives", or "prepare goals for a workshop". Always run this skill
+  before generating any other workshop content (slides, activities, facilitator notes),
+  since the ILO is the spine every other phase is built around.
+  This is Skill 02 of 5 in the workshop generation pipeline.
+---
+
+# Skill 02 — Learning Goals Generator
 
 **Stage:** 2 of 5
 **Reads:** `context/workshop_description.md` · `projects/<slug>/01_research.md`
@@ -6,58 +20,96 @@
 
 ---
 
-## Purpose
+## Overview
 
-A 10-minute workshop has room for exactly **one Intended Learning Outcome (ILO)**. Not three. Not a primary plus two sub-goals. One.
-
-This skill defines that ILO with precision — anchored to the right Bloom's level, honest about what 10 minutes can genuinely achieve, and phrased so the facilitator can state it in the Arrival phase and a participant can verify it for themselves in the Assessing phase.
-
-The ILO is the spine of the entire workshop. Every ARIVA phase exists to serve it.
+A 10-minute workshop has room for exactly **one Intended Learning Outcome (ILO)**.
+This skill generates that ILO autonomously, checks it against a quality bar, then
+presents it to the human for approval before writing the output file.
 
 ---
 
-## Inputs
+## Pipeline
 
-Read before starting:
-- `context/workshop_description.md`
-- `projects/<slug>/01_research.md` — especially "The One Teachable Concept" and the Assessing Question
+### Step 1 — Read inputs
+
+Read both:
+- `context/workshop_description.md` — for audience, context, and intent
+- `projects/<slug>/01_research.md` — specifically "The One Teachable Concept" and the Assessing Question
+
+If either file is missing, stop and ask the human to provide it before continuing.
+Extract the slug from the project path and carry it through to the output filename.
 
 ---
 
-## Bloom's Taxonomy Reference
+### Step 2 — Select Bloom's level (autonomous)
 
-Pick ONE level. For a 10-minute introductory session, **Understand** or **Apply** is almost always the right choice. Only use higher levels if the workshop description explicitly targets an experienced audience doing active work.
+Pick exactly ONE level from the table below. For a 10-minute introductory session,
+**Understand** or **Apply** is almost always correct. Only go higher if the workshop
+description explicitly targets an experienced audience doing active work.
 
 | Level | Verb examples | Right for 10 min? |
 |---|---|---|
 | **Remember** | define, list, recall, identify | Yes — if the concept is genuinely new vocabulary |
-| **Understand** | explain, summarize, paraphrase, distinguish | Yes — the most common right answer |
+| **Understand** | explain, summarise, paraphrase, distinguish | Yes — most common right answer |
 | **Apply** | use, demonstrate, solve, apply to | Yes — if the Verarbeitung task is hands-on |
-| **Analyze** | compare, differentiate, examine | Only with experienced audience |
+| **Analyse** | compare, differentiate, examine | Only with experienced audience |
 | **Evaluate** | judge, critique, justify | Rarely achievable in 10 min |
 | **Create** | design, build, generate | Not in 10 min |
 
 ---
 
-## Writing the ILO
+### Step 3 — Draft the ILO (autonomous)
 
 A well-formed ILO:
 1. Starts with "By the end of this workshop, participants will be able to..."
-2. Uses a single Bloom's verb (not "understand and apply" — pick one)
-3. Names the specific concept from the research
-4. Is testable — the Assessing question should directly check it
+2. Uses a **single** Bloom's verb (not two — pick one)
+3. Names the specific concept from `01_research.md`
+4. Is testable — the Assessing Question should directly check it
 
-**Good ILO examples:**
+**Good examples:**
 > "By the end of this workshop, participants will be able to **explain** what a feedback loop is and identify one example in their own work."
 
 > "By the end of this workshop, participants will be able to **distinguish** between active listening and passive listening in a conversation."
 
-> "By the end of this workshop, participants will be able to **apply** the concept of psychological safety to name one specific change they could make in their team."
-
-**Bad ILO examples (and why):**
-- "Participants will understand feedback loops" — "understand" alone is not a Bloom's verb, and it's not testable
+**Bad examples (and why):**
+- "Participants will understand feedback loops" — "understand" alone is not a Bloom's verb; not testable
 - "Participants will know more about communication" — too vague, no concept, not testable
-- "Participants will understand, apply, and analyze the concept" — three levels in 10 minutes is magical thinking
+- "Participants will understand, apply, and analyse the concept" — three levels in 10 minutes is magical thinking
+
+---
+
+### Step 4 — Self-check against quality bar (autonomous)
+
+Before presenting anything to the human, verify:
+
+- [ ] Exactly ONE ILO — no sub-objectives
+- [ ] Single, specific Bloom's verb
+- [ ] Phrased so a participant could read it and know exactly what they'll be able to do
+- [ ] Maps cleanly to the Assessing Question from `01_research.md` (adjust the question if needed)
+- [ ] At least 2 out-of-scope items identified (protects the facilitator from scope creep)
+- [ ] Bloom's level is honest — do not inflate it beyond what 10 minutes can deliver
+
+If the workshop description implies multiple ILOs, pick the most important one and note the others in the out-of-scope section, flagging they would require additional sessions.
+
+---
+
+### Step 5 — Human checkpoint
+
+Present the full draft output using the template below. Then ask:
+
+> "Does this look right, or would you like to adjust anything before I write the file?"
+
+**Handling feedback:**
+- If the human approves → proceed to Step 6.
+- If the human requests a change → make the **targeted edit only**, re-present the updated output, and ask again.
+- Do not regenerate the full output unless the human explicitly asks for a full restart.
+
+---
+
+### Step 6 — Write output
+
+Write the approved content to `projects/<slug>/02_learning_goals.md` using the
+template below. Confirm to the human that the file has been written.
 
 ---
 
@@ -83,7 +135,8 @@ By the end of this workshop, participants will be able to:
 
 ## Why This ILO
 
-<2–3 sentences justifying the choice of Bloom's level and scope for this audience and duration. Be honest — explain what the 10-minute format can and cannot achieve.>
+<2–3 sentences justifying the choice of Bloom's level and scope for this audience and
+duration. Be honest — explain what the 10-minute format can and cannot achieve.>
 
 ---
 
@@ -121,19 +174,6 @@ To protect the 10-minute scope, the following are explicitly out of scope:
 
 ## Facilitator Note
 
-<One sentence for the facilitator about how to use the ILO in the Arrival phase — how to state it clearly and memorably so participants know exactly what success looks like before the session begins.>
+<One sentence for the facilitator about how to state the ILO clearly in the Arrival phase,
+so participants know exactly what success looks like before the session begins.>
 ```
-
----
-
-## Quality Bar
-
-A good learning goals output for a 10-minute workshop:
-- Has exactly ONE ILO — no sub-objectives
-- Uses a single, specific Bloom's verb
-- Is phrased so a participant could read it and know exactly what they'll be able to do at the end
-- Maps clearly to an assessing question that could check it in 60 seconds
-- Lists at least 2 out-of-scope items (this protects the facilitator from scope creep on the day)
-- Is honest about Bloom's level — "understand" is fine if that's what 10 minutes can deliver
-
-If the workshop description implies multiple ILOs, pick the most important one. Note the others in the out-of-scope section and flag that they would require additional sessions.
