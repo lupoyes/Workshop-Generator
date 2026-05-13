@@ -99,8 +99,24 @@ context/workshop_description.md
         │                                                  (5–7 slides)
         ▼
 [05 FINALIZE] ◄── all four outputs ────────────────────► FINAL_<slug>.md
-                                                           (one document, run-ready)
+        │                                                  (one document, run-ready)
+        ▼
+[06 EXPORT JSON] ◄── all five outputs ─────────────────► workshop.json
+                                                           projects/index.json
+                                                           (frontend-ready)
 ```
+
+---
+
+## Skill 06 — Export to JSON
+
+**File:** `SKILLS/EXPORT_JSON.md`
+**Output:** `projects/<slug>/workshop.json` + `projects/index.json`
+
+Extracts all structured data from the five Markdown outputs and writes a single `workshop.json` per project. Also updates `projects/index.json`, the manifest the Next.js frontend uses to list all available workshops. This skill runs automatically after Finalize — it does not add or modify content, only restructures it.
+
+**Input:** All five previous output files
+**Output shape:** Full typed JSON (meta, ILO, ARIVA phases with scripts, slides array, misconceptions, facilitator tips, pre-run checklist, resources) + updated index manifest
 
 ---
 
