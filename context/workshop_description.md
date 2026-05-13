@@ -1,77 +1,33 @@
 # Workshop Description
 
-> **Instructions:** Fill in the fields below. This is a **10-minute ARIVA workshop** — the format is short, interactive, and built around a single concept. The more specific you are here, the sharper the output will be.
->
-> Required: Topic, Audience, and either a stated ILO idea or a clear goal. Everything else is optional but useful.
-
----
-
 ## Topic
 
-*What concept or skill should this workshop introduce?*
-*One sentence is enough — be specific. "Communication" is too broad. "How to give feedback without triggering defensiveness" is right-sized.*
-
-<Topic here>
-
----
+**Gamification and In-Class Live Quizzes** — using game mechanics and real-time quiz tools (such as Kahoot!, Mentimeter, or Poll Everywhere) to make learning more engaging, drive participation, and increase knowledge retention during a class session.
 
 ## Audience
 
-*Who are the participants?*
-*Include: their role/background, their approximate experience level with this topic, and any relevant context about the group (e.g. "they work together daily", "mixed seniority", "never done a workshop like this before").*
-
-<Audience description here>
-
----
+University instructors, teachers, or trainers who want to make their classes more interactive. They are familiar with PowerPoint-style lectures but have limited experience with live quiz tools or gamification techniques. They may have heard of Kahoot! but don't know how to use it strategically for learning rather than just entertainment.
 
 ## Prior Knowledge
 
-*What do participants already know or believe about this topic?*
-*This directly shapes the Reactivating phase — the hook that connects new content to what they already know. Even a rough read is helpful (e.g. "most have heard the term but never applied it", "complete beginners", "they think they know this but have a common misconception").*
+Participants understand traditional teaching methods well. They've seen or heard of live quiz tools but probably associate gamification with "just making things fun" — without understanding the learning science behind why it works. The reactivation hook should surface this gap: they know passive lecture delivery isn't ideal, but haven't had a concrete method to change it.
 
-<Prior knowledge level here>
+## Intended Learning Outcome (ILO)
 
----
-
-## Intended Learning Outcome (ILO) — optional
-
-*What should participants be able to DO at the end of this 10 minutes that they couldn't do (or didn't know how to do) before?*
-*If you have a clear ILO in mind, write it here. If not, leave it blank — the pipeline will derive one from the topic and audience.*
-*Format: "By the end, participants will be able to [verb] [concept]..."*
-
-<ILO idea here — or leave blank>
-
----
+By the end of this workshop, participants will be able to design and run a short in-class live quiz that uses game mechanics to activate student participation and check understanding — not just entertain.
 
 ## Format
 
-*How will this be delivered?*
-*In-person / Virtual (Zoom/Teams) / Hybrid*
-
-<Format here>
-
----
+In-person.
 
 ## Group Size
 
-*Expected number of participants. This affects how the Verarbeitung (processing) phase is designed.*
-*e.g. "8 people", "20–30 people", "unknown"*
-
-<Group size here>
-
----
+Small to medium: 10–30 participants.
 
 ## Constraints or Context
 
-*Anything else the generator should know:*
-- *A specific analogy or example to use (or avoid)*
-- *A sensitive angle to handle carefully*
-- *A tool, method, or framework to build around*
-- *Language or cultural context*
-- *Whether this is a standalone session or part of a series*
-
-<Constraints here — or delete this section if none>
-
----
-
-*Once this file is filled in, open this project in Claude and say "run the workshop generator". Claude will read this file and run all five stages automatically.*
+- Participants may be sceptical that gamification is "serious pedagogy" — address this without being defensive
+- The Verarbeitung task must be concrete: participants actually design one quiz question they could use in their next class
+- Avoid tool-specific walkthroughs (this is not a Kahoot! tutorial) — focus on the pedagogical principle
+- Keep the tone collegial and practical — these are professionals, not students
+- The assessing question must check whether they can connect gamification mechanics to a specific learning outcome

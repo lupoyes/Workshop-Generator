@@ -1,0 +1,191 @@
+{
+  "slug": "variance_sample",
+  "title": "Calculate the Variance of a Sample",
+  "generatedAt": "2026-05-13",
+  "meta": {
+    "format": "In-person",
+    "audience": "Students, no statistics background",
+    "groupSize": "13–30",
+    "duration": "10 minutes"
+  },
+  "ilo": "Calculate the variance of a small dataset by hand, following the three-step process: subtract the mean, square the differences, and average the squared values.",
+  "bloomsLevel": "Apply",
+  "coreConcept": "Variance measures how spread out the values in a dataset are — specifically, the average of the squared distances from the mean.",
+  "timingCard": {
+    "arrival": "\"By the end you'll be able to calculate variance by hand.\"",
+    "reactivating": "\"Two classes, same average of 70% — which would you rather be in?\"",
+    "informing": "Variance = average squared distance from the mean. Three steps.",
+    "verarbeitung": "\"Dataset: 2, 4, 4, 4, 6 — mean is 4. Calculate variance in pairs. 2 min.\"",
+    "assessing": "\"If variance is 0, what does that tell you about the data?\""
+  },
+  "preRunChecklist": [
+    "Say the ILO out loud once before you walk in — \"calculate variance by hand using three steps\"",
+    "Know the Reactivating question by heart: \"Two classes, same average, different spread — which would you rather be in?\"",
+    "Write the three steps on the board before participants arrive: (1) subtract the mean, (2) square the differences, (3) average them",
+    "Write the Verarbeitung dataset on the board or have it on Slide 05: 2, 4, 4, 4, 6 — mean = 4",
+    "Have a visible 2-minute timer ready (phone timer, projected timer, or a watch you can call out)",
+    "Know the answer: variance of (2, 4, 4, 4, 6) = 1.6",
+    "Know the two things to park: standard deviation (\"next step after this\") and n vs. n−1 (\"two versions of the formula, we're using the simpler one today\")",
+    "Arrange seating so participants can work in pairs easily"
+  ],
+  "ariva": {
+    "arrival": {
+      "timeRange": "0:00–1:00",
+      "script": "\"Hi, I'm [name]. In the next 10 minutes, we're going to look at variance — a way to measure how spread out data is. By the end, you'll be able to calculate the variance of a small dataset by hand. Let's go.\"\n\nCue: Say the ILO clearly and directly. Don't explain what variance is yet — that's Informing. Move immediately into the first question."
+    },
+    "reactivating": {
+      "timeRange": "1:00–2:30",
+      "question": "Think of two classes that both had an average grade of 70%. In one class everyone got between 65 and 75. In the other, grades ranged from 30 to 100. Show of hands — which class would you rather be in, and why?",
+      "format": "Show of hands + 2–3 quick verbal responses",
+      "script": "\"Quick question before we get into the math. Imagine two classes. Both had an average grade of 70%. In one class, everyone scored between 65 and 75. In the other, grades ranged from 30 to 100. Show of hands — who would rather be in the first class?\"\n\n(Wait for hands. Then:)\n\n\"Who'd rather be in the second?\"\n\n(Take 1–2 quick reasons from volunteers. Listen for words like 'consistent', 'fair', 'risky', 'unpredictable'.)\n\n\"Interesting. Both classes have the same average — but they feel completely different. That difference is what variance captures. Variance is the number that tells you how spread out your data is. Let's see exactly how it works.\"\n\nCue: If students are quiet after the hands, prompt: \"One word — why'd you pick that one?\" Don't let silence stretch past 10 seconds.\n\nCue: If a student says \"I'd pick the risky class because I could get 100\" — great. Say: \"Exactly — same mean, very different experience. Variance is the tool that captures that difference.\"\n\nTransition: \"Here's the concept — and then I'll show you the three steps.\""
+    },
+    "informing": {
+      "timeRange": "2:30–7:00",
+      "script": "Part 1 — The intuition (2:30–4:00):\n\n\"Variance measures how far each value in your dataset is from the mean — on average. That's it. If your data is clustered tightly around the mean, variance is low. If it's scattered all over the place, variance is high.\"\n\n\"Think about those two classes. In the tight class — 65 to 75 — every grade is close to the average of 70. Small distances from the mean. Low variance. In the scattered class — 30 to 100 — some grades are far from 70. Large distances. High variance.\"\n\nPart 2 — The three steps (4:00–6:30):\n\n(Write on the board as you say each step.)\n\n\"How do we calculate it? Three steps.\"\n\n\"Step 1: Subtract the mean from each value. This gives you the distance of each value from the mean. Some will be positive, some negative — that's fine.\"\n\n\"Step 2: Square each of those distances. Why? Two reasons. First, squaring makes all the values positive — otherwise the negatives and positives cancel out and you'd always get zero. Second, squaring punishes big deviations more than small ones.\"\n\n\"Step 3: Average those squared distances. Add them all up and divide by how many values you have. That average is your variance.\"\n\nWorked example (6:30–7:00):\n\n\"Quick example. Scores: 3, 4, 5. Mean is 4.\"\n(Write: 3−4=−1, 4−4=0, 5−4=+1)\n\"Square them: 1, 0, 1.\"\n\"Average: (1+0+1) ÷ 3 = 0.67. That's the variance.\"\n\nCue: At around 6:00, check in: \"Any questions before you try one yourselves?\" Take one question only. If someone asks about standard deviation or n−1, say: \"Great question — that's the next step after today. For now, let's focus on this.\"\n\nTransition: \"Your turn. Find a partner.\""
+    },
+    "verarbeitung": {
+      "timeRange": "7:00–9:30",
+      "taskPrompt": "Here are five numbers: 2, 4, 4, 4, 6. The mean is 4. Work in pairs. Calculate the variance. Follow the three steps on the board. Pen and paper only. You have 2 minutes.",
+      "format": "Pairs — pen and paper only",
+      "timerMinutes": 2,
+      "answer": 1.6,
+      "dataset": [2, 4, 4, 4, 6],
+      "datasetMean": 4,
+      "script": "\"Here are five numbers: 2, 4, 4, 4, 6. The mean is 4. Work in pairs. Calculate the variance. Follow the three steps on the board. Pen and paper only. You have 2 minutes.\"\n\n(Write on board: \"2, 4, 4, 4, 6 — mean = 4\")\n(Start a visible 2-minute timer.)\n\"Go.\"\n\nCue: While they work, walk the room. Listen for confusion at Step 2 (squaring) and Step 3 (dividing by n). Don't correct immediately — let them work through it.\n\nCue: At 1:30: \"30 seconds — wrap up your last step.\"\n\nTo close the task:\n\"Time. What did you get? Shout it out.\"\n(Collect answers. Write them on the board. Confirm 1.6.)\n\"Let's check. Step 1: 2−4=−2, 4−4=0, 4−4=0, 4−4=0, 6−4=+2. Step 2, square them: 4, 0, 0, 0, 4. Step 3: (4+0+0+0+4) ÷ 5 = 1.6.\"\n\"Notice: three values sit exactly at the mean — they contribute zero to the variance. Only the two outliers drive it.\"\n\nTransition: \"Last question.\""
+    },
+    "assessing": {
+      "timeRange": "9:30–10:00",
+      "question": "If I told you the variance of a dataset is exactly zero — what does that tell you about the data?",
+      "successSignal": "A student who answers \"all the values are the same\", \"there's no spread\", or \"every value equals the mean\" has understood the core concept.",
+      "script": "\"One final question. If I told you the variance of a dataset is exactly zero — what does that tell you about the data?\"\n\n(Take 2–3 hands or quick shout-outs.)\n\n\"Exactly — if variance is zero, every value is identical. Nothing is spread from the mean. All the distances are zero. Zero squared is zero. Zero averaged is zero.\"\n\n\"You've just calculated variance. If you want to go one step further — standard deviation is the square root of variance, which brings the units back to the original scale. But that's for next time.\"\n\nCue: If responses show the concept didn't land, don't re-teach. Say: \"It means every value is the same — no variation at all. That's why it's called variance.\" Then close."
+    }
+  },
+  "contingencyNotes": [
+    {
+      "scenario": "Group finishes Verarbeitung in under 1 minute",
+      "response": "\"Fast work. Now tell me — what would happen to the variance if I changed the 2 to a 10? Would it go up or down? Work that out.\""
+    },
+    {
+      "scenario": "Group is too slow and time runs out before finishing",
+      "response": "Cut the self-check. Walk through the answer on the board yourself. Go straight to the Assessing question."
+    },
+    {
+      "scenario": "Student asks about standard deviation during Informing",
+      "response": "\"Standard deviation is the square root of variance — it brings everything back to the original units. We'll get there. For now, let's finish variance.\""
+    },
+    {
+      "scenario": "Student asks about n vs. n−1",
+      "response": "\"There are two versions of this formula — one for a sample, one for a whole population. We're using the simpler one today. Worth looking up after this.\""
+    }
+  ],
+  "slides": [
+    {
+      "number": 1,
+      "title": "Arrival / Title Card",
+      "phase": "A — Arrival",
+      "layout": "Title card",
+      "content": "Title: Variance\nSubtitle: By the end, you'll be able to calculate the variance of a small dataset by hand.\nPresenter: [Name] · [Date]",
+      "speakerCue": "Read the subtitle aloud as the ILO. Then move immediately — no extra words.",
+      "designPrompt": "Full-bleed deep indigo background (#1E1B4B). \"Variance\" in very large Plus Jakarta Sans Bold, warm white, centered and slightly above midpoint. Subtitle in smaller weight below, also warm white, slightly more transparent (80% opacity). Presenter line in small text at bottom center. No images, no icons, no decoration. The slide should feel like a clean, confident opening statement — like the first line of a good lecture. Avoid gradients, textures, or anything that competes with the text."
+    },
+    {
+      "number": 2,
+      "title": "Reactivating Question",
+      "phase": "R — Reactivating",
+      "layout": "Quote card — two halves",
+      "content": "Left half: Class A · Everyone: 65–75\nRight half: Class B · Grades: 30–100\nBottom center: Both classes: average grade = 70%\nSmall prompt: Which class would you rather be in?",
+      "speakerCue": "Display this slide, then ask the question verbally. Wait for hands. Do not advance until you've collected 2–3 responses.",
+      "designPrompt": "White background (#F9F7F4). Slide split vertically down the middle with a fine indigo dividing line. Left half: \"Class A\" in large indigo bold, below it a tight cluster of dots or small squares close together in amber — visually representing \"clustered\". Right half: \"Class B\" in large indigo bold, below it the same dots spread widely across the space — visually representing \"scattered\". At the bottom center, a small text line: \"Both have an average of 70%\". Below that, in amber bold: \"Which class would you rather be in?\" Clean, simple, immediately readable from the back of a room. No clipart, no stock photos."
+    },
+    {
+      "number": 3,
+      "title": "Informing: The Three Steps",
+      "phase": "I — Informing",
+      "layout": "Two-column",
+      "content": "Headline: How to calculate variance\nLeft column:\n1. Subtract the mean from each value\n2. Square each difference\n3. Average the squared values\nRight column: Flow diagram (values → −mean → ² → sum ÷ n → Variance)",
+      "speakerCue": "Walk through each step verbally. Write the steps on a physical board as you speak — the slide reinforces, it doesn't replace your explanation.",
+      "designPrompt": "White background. Left side: numbered list in large indigo text, generous line spacing, Plus Jakarta Sans. Each step on its own line — no sub-bullets, no clutter. Right side: a minimal flow diagram. Three input values (represented as boxes: \"x₁\", \"x₂\", \"x₃\") flow down through arrows labeled \"− mean\", then \"²\", then \"sum ÷ n\", arriving at a final box labeled \"Variance\". Amber is used only for the arrows and the final box. Everything else is indigo on white. The diagram should be clean enough that a student in the back row can follow the logic at a glance. Avoid 3D effects, shadows, or decorative flourishes."
+    },
+    {
+      "number": 4,
+      "title": "Informing: Worked Example",
+      "phase": "I — Informing (continued)",
+      "layout": "Full-width step-by-step",
+      "content": "Headline: Example: scores 3, 4, 5 — mean = 4\nStep 1: 3−4=−1 · 4−4=0 · 5−4=+1\nStep 2: (−1)²=1 · 0²=0 · 1²=1\nStep 3: (1+0+1)÷3 = 0.67\nBottom: Variance = 0.67",
+      "speakerCue": "This slide appears briefly as you walk through the example. Students should be watching you and the board, not reading the slide. Advance to Slide 05 as soon as you say \"your turn.\"",
+      "designPrompt": "White background. Three horizontal rows, each representing one step. Step labels (\"Step 1\", \"Step 2\", \"Step 3\") in small indigo caps on the left. The arithmetic in the centre in large, clean type. The final result (\"Variance = 0.67\") in amber bold at the bottom, slightly larger than the rest. Generous vertical spacing between steps — each row should breathe. The layout should feel like a clean whiteboard, not a busy table. No borders, no shading, no gridlines."
+    },
+    {
+      "number": 5,
+      "title": "Verarbeitung Task",
+      "phase": "V — Verarbeitung",
+      "layout": "Instruction card",
+      "content": "Title: Your turn.\n1. Dataset: 2, 4, 4, 4, 6 — mean = 4\n2. Follow the three steps\n3. Work in pairs — pen and paper only\nTimer badge: ⏱ 2 minutes",
+      "speakerCue": "Read the task aloud while this slide is showing. Start the timer. Leave this slide showing for the full 2 minutes while participants work.",
+      "designPrompt": "White background with a subtle warm texture (very faint, not distracting). \"Your turn.\" as the dominant headline in large indigo bold — the phrase should feel energising, not intimidating. Below it, the three task lines in clear numbered format, generous spacing. In the bottom-right corner: a prominent timer badge — a rounded rectangle in amber (#F59E0B) with \"⏱ 2 min\" in white bold inside. The badge should be large enough to see from across a room. No other decoration. The slide should communicate: \"stop watching, start doing.\""
+    },
+    {
+      "number": 6,
+      "title": "Assessing Question",
+      "phase": "A — Assessing",
+      "layout": "Takeaway card",
+      "content": "If the variance of a dataset is 0, what does that tell you about the data?",
+      "speakerCue": "Ask the question aloud. Collect 2–3 responses. Close the session.",
+      "designPrompt": "Return to deep indigo background — mirroring Slide 01, closing the loop visually. The question in large warm white Plus Jakarta Sans, centered, taking up 60% of the slide. No other text. No images. The question should feel like the natural endpoint of the journey — the slide that confirms we've arrived somewhere. Slightly lighter indigo than Slide 01 (e.g. #2E2A6B) to signal a shift from \"beginning\" to \"close\", but staying within the same family. Nothing else on this slide."
+    }
+  ],
+  "designSystem": {
+    "fonts": "Plus Jakarta Sans Bold (headings) / Plus Jakarta Sans Regular (body)",
+    "colors": {
+      "primary": "#1E1B4B",
+      "surface": "#F9F7F4",
+      "accent": "#F59E0B",
+      "text": "#1E1B4B"
+    },
+    "imageStyle": "Minimal flat diagrams and dot/shape illustrations only — no photography, no clipart",
+    "transitions": "Simple cut between slides — no animations",
+    "ratio": "16:9"
+  },
+  "misconceptions": [
+    {
+      "misconception": "Why do we square the differences? Can't we just average the distances?",
+      "reality": "Without squaring, positive and negative deviations cancel out and you always get 0. Squaring also penalises large deviations more heavily than small ones — which is often what we want."
+    },
+    {
+      "misconception": "Is variance the same as standard deviation?",
+      "reality": "No. Standard deviation is the square root of variance — it brings the units back to the original scale. Variance is in squared units."
+    }
+  ],
+  "outOfScope": [
+    "Standard deviation — closely related, will be asked about; park it: \"Great question, that's the next step after variance — we'll get there.\"",
+    "Population variance vs. sample variance (dividing by n vs. n−1) — do not introduce this distinction in 10 minutes; use n for this session.",
+    "Why we square (deep algebraic proof) — the intuition (cancel-out problem) is sufficient; the formal proof is out of scope."
+  ],
+  "facilitatorTips": [
+    {
+      "title": "Intuition before formula — always",
+      "body": "The biggest risk with this workshop is writing the formula on the board before students have any sense of what it means. Always explain the \"what\" (spread, distance from mean) before the \"how\" (the three steps). If you lead with Σ(xᵢ − x̄)² ÷ n, you'll lose them immediately."
+    },
+    {
+      "title": "The squaring question will come up — be ready",
+      "body": "Roughly half of all groups will ask \"why do we square?\" during or immediately after the Informing phase. Have a 20-second answer ready: \"Without squaring, the positives and negatives cancel out to zero — and that tells you nothing. Squaring solves that.\" Don't go deeper than this in the available time."
+    },
+    {
+      "title": "The Verarbeitung dataset is small by design — let them finish",
+      "body": "(2, 4, 4, 4, 6) with a mean of 4 is chosen so that the arithmetic is fast and the answer (1.6) is clean. Don't change the dataset to something \"more realistic\" — harder numbers will eat the full 2 minutes on arithmetic, leaving no time for the insight."
+    },
+    {
+      "title": "Three zeros in the dataset are a teaching gift",
+      "body": "When you confirm the answer, point out that three values sit exactly at the mean and contribute zero to the variance. This makes the concept visceral — students can see that only the two outliers (2 and 6) drive the variance. This moment often produces the real \"aha.\""
+    },
+    {
+      "title": "n vs. n−1 will come up — park it confidently",
+      "body": "Someone will ask. \"We're using the formula for a full population today — there's also a version for samples where you divide by n−1 instead. It's a subtle but important distinction that deserves its own session.\" Then move on. Don't get drawn into the Bessel's correction rabbit hole."
+    }
+  ],
+  "deeperResources": [
+    "\"Statistics\" by Freedman, Pisani & Purves — The most intuitive introduction to statistics ever written. Chapter 4 covers spread and variance without intimidating notation. Ideal for students who want to understand the \"why\" before the \"how.\"",
+    "Khan Academy — Variance and Standard Deviation (khanacademy.org) — Free, well-paced video series with worked examples. Perfect follow-on for students who want to practice more problems after this session."
+  ],
+  "editorialNotes": "No issues found — all ARIVA phases align with the ILO. The Assessing question (\"variance = 0\") tests conceptual understanding rather than mechanical recall, which is appropriate for the Apply level. The n vs. n−1 distinction is consistently handled as an out-of-scope park across all phases."
+}

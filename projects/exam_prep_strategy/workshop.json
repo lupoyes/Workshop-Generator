@@ -1,0 +1,158 @@
+{
+  "slug": "exam_prep_strategy",
+  "title": "The Most Effective Study Technique You're Probably Not Using",
+  "generatedAt": "2026-05-13",
+  "meta": {
+    "format": "In-person",
+    "audience": "University students preparing for exams",
+    "groupSize": "15–40 participants",
+    "duration": "10 minutes"
+  },
+  "ilo": "By the end of this workshop, participants will be able to use retrieval practice as a study method by recalling course content from memory without looking at notes, and identifying gaps to guide further study.",
+  "bloomsLevel": "Apply",
+  "coreConcept": "Retrieval practice — the act of forcing your brain to recall information from scratch, without looking — strengthens memory far more than re-reading the same material.",
+  "timingCard": {
+    "arrival": "\"You'll have already used it by the end.\"",
+    "reactivating": "\"Raise your hand if you studied hard and still blanked on an exam.\"",
+    "informing": "Familiar ≠ Remembered — retrieval practice explained",
+    "verarbeitung": "\"Write everything you remember about one topic. No notes.\" — 2 min timer",
+    "assessing": "\"Who found at least one gap — something you thought you knew but couldn't recall?\""
+  },
+  "preRunChecklist": [
+    "Know the opening line by heart — you should be able to say it without looking at a slide",
+    "Know the reactivation question exactly: \"Raise your hand if you studied hard and still blanked on an exam\"",
+    "Have a visible timer ready for the Verarbeitung phase (phone, projected clock, or online timer)",
+    "Confirm participants have pen and paper — or tell them to use the back of any handout",
+    "Know the two misconceptions to watch for: \"I already quiz myself\" and \"I should know it before testing myself\"",
+    "Have one sentence ready to park out-of-scope questions: \"Great — that's the next level. Worth exploring separately.\"",
+    "Know the closing line for the Assessing phase: \"That discomfort is the learning. Use your gaps.\"",
+    "If the group is experienced: prepare to acknowledge it after Reactivating and adjust Informing to be confirmatory rather than introductory"
+  ],
+  "ariva": {
+    "arrival": {
+      "timeRange": "0:00–1:00",
+      "script": "\"Hi, I'm [name]. In the next 10 minutes, you're going to use the most effective study technique most students never use — and by the end, you'll have already done it once. Let's go.\""
+    },
+    "reactivating": {
+      "timeRange": "1:00–2:30",
+      "question": "Raise your hand if this has ever happened to you: you studied — actually put in real hours — and then sat in the exam and your mind just went blank on something you'd reviewed.",
+      "format": "Show of hands",
+      "script": "\"Quick question before we get into it. Raise your hand if this has ever happened to you: you studied — actually put in real hours — and then sat in the exam and your mind just went blank on something you'd reviewed.\"\n\n*(Wait. Nearly all hands should go up.)*\n\n\"Good. Almost everyone. That experience has a name and, more importantly, a fix. That's what the next 10 minutes are about.\""
+    },
+    "informing": {
+      "timeRange": "2:30–7:00",
+      "coreConcept": "Re-reading creates familiarity, not memory. Only active recall — forcing your brain to retrieve without looking — builds the memory trace that survives an exam.",
+      "script": "\"Here's what happens when you re-read your notes. Everything looks familiar. You think: 'Yes, I know this.' But here's the thing — familiar is not the same as remembered. Familiar just means you've seen it before.\n\nThe moment you close your notes and try to recall something from scratch — no prompts, no text in front of you — that familiar feeling evaporates. Because recognition and recall are not the same skill. And exams test recall.\n\nThere's a good analogy here. Imagine you want to get stronger at push-ups. You could watch videos of other people doing push-ups. You'd recognise exactly what the movement looks like. But you wouldn't get stronger. You need to do the reps yourself. Re-reading is watching the video. Retrieval practice is doing the reps.\n\nSo what does retrieval practice actually look like? It's simple: you close your notes, you grab a blank sheet of paper, and you write down everything you can remember about a topic. No looking. You will get things wrong. You will have gaps. That is the point — because finding those gaps IS the studying. The struggle to remember, even when you fail, is exactly what builds the memory.\n\nStudents who quiz themselves consistently outperform students who re-read, even when the re-readers spend more time studying. The method works. Most students just don't use it.\""
+    },
+    "verarbeitung": {
+      "timeRange": "7:00–9:30",
+      "taskPrompt": "Pick one topic you're studying right now. Close your notes. Don't look at your phone. Write down everything you can remember about that topic. Don't worry about gaps. Don't worry about getting it perfect. Just write.",
+      "format": "Solo written reflection (pen and paper)",
+      "script": "\"Here's what we're doing. You need a pen and a blank piece of paper — or the back of whatever you have. Pick one topic you're studying right now. Could be anything. A concept, a chapter, a term.\n\nIn a moment I'm going to say go. When I do: close your notes, don't look at your phone, and write down everything you can remember about that topic. Don't worry about gaps. Don't worry about getting it perfect. Just write.\n\nTwo minutes. Ready? Go.\"\n\n[Start timer. At ~1:30: \"Thirty seconds — wrap up your thought.\"]\n\n\"Stop. Put your pen down. Now I want you to do one thing: look at what you wrote and notice what's NOT there. What couldn't you pull up? What's missing? Those gaps — right there — that is your actual study list. You just used retrieval practice.\""
+    },
+    "assessing": {
+      "timeRange": "9:30–10:00",
+      "question": "Hands up — who just found at least one gap? Something you were surprised you couldn't remember?",
+      "successSignal": "A participant has met the ILO if they attempted recall and can identify at least one gap in their knowledge — demonstrating that they have used the strategy, not merely understood it.",
+      "script": "\"Hands up — who just found at least one gap? Something you were surprised you couldn't remember?\"\n\n*(Hands go up — most of them.)*\n\n\"That feeling of finding a gap — that IS the strategy working. That discomfort is not failure. It's the learning happening. Next time you sit down to study: start there. Close your notes. Write what you remember. Use the gaps.\n\nThat's retrieval practice. You've already done it once.\""
+    }
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "Arrival / Title Card",
+      "phase": "A — Arrival",
+      "layout": "Title card",
+      "content": "Title: The Most Effective Study Technique You're Probably Not Using\nSubtitle: By the end of this session, you'll have already used it.\nPresenter: [Name] · [Date/Context]",
+      "speakerCue": "Read the subtitle aloud. Let the implied promise land for a moment, then move straight into the reactivation question.",
+      "designPrompt": "Full-bleed deep navy background (#1A2744). Title centered in large white Inter Bold — maximum 3 lines. Subtitle in medium Inter Regular, off-white (#E8E8E8), below with a small gap. Presenter name/date very small at bottom. No images, no icons, no decorative elements. The feeling is confident and slightly provocative — like a good opening line that makes you sit up. Avoid gradients, stock images, and anything decorative."
+    },
+    {
+      "number": 2,
+      "title": "Reactivating Question",
+      "phase": "R — Reactivating",
+      "layout": "Quote card",
+      "content": "Large text: \"You studied hard. You still blanked on the exam. 🖐 Raise your hand.\"\nSmall label: Think about the last time it happened.",
+      "speakerCue": "Read the question aloud and then wait silently. Let the hands go up before you say anything. This pause is important — don't rush it.",
+      "designPrompt": "Same navy base as Slide 01. The question fills 65–70% of the slide in large Inter Bold white type. The \"🖐 Raise your hand.\" line in amber for emphasis. Small italic label at the bottom in muted off-white. No images. The pause this slide creates is the point — the layout should feel open and expectant, not cluttered."
+    },
+    {
+      "number": 3,
+      "title": "Informing: The Illusion of Knowing",
+      "phase": "I — Informing",
+      "layout": "Two-column",
+      "content": "Headline: Familiar ≠ Remembered\nLeft column: \"Re-reading: feels like learning.\" / \"Exam: the feeling vanishes.\"\nRight column: Minimal two-circle diagram — RECOGNITION vs. RECALL with gap labelled \"← the exam gap\"",
+      "speakerCue": "This slide is a visual anchor while you deliver the push-up analogy verbally. Don't read the slide — use it as a backdrop.",
+      "designPrompt": "Navy background. Headline in large amber Inter Bold at the top. Left column in white Inter Regular — short phrases, wide line spacing. Right column: clean, minimal two-circle diagram in white with amber labels (RECOGNITION and RECALL) and a gap between them labelled \"← the exam gap\". The diagram should feel like something drawn on a whiteboard, not a polished infographic. No shadows, no gradients. Whitespace is the design."
+    },
+    {
+      "number": 4,
+      "title": "Informing: What Retrieval Practice Looks Like",
+      "phase": "I — Informing (continued)",
+      "layout": "Full-image with overlay",
+      "content": "Visual: blank sheet of paper with a pen, seen from above\nOverlay top: Close your notes.\nOverlay bottom: Write what you remember.\nSmall amber badge: Do the reps.",
+      "speakerCue": "Advance to this slide when moving from 'why re-reading fails' to 'here's what to do instead.' Say the two overlay lines aloud as you advance.",
+      "designPrompt": "Light warm grey/off-white background (#F4F2EE) — a deliberate break from the navy base to signal a shift from explaining to showing. Clean overhead photograph or flat illustration of a blank white sheet and a simple pen. Overlay text in navy Inter Bold, top and bottom, generous margins. Small amber rounded badge lower right: \"Do the reps.\" in white. Clean, practical, immediate."
+    },
+    {
+      "number": 5,
+      "title": "Verarbeitung Task",
+      "phase": "V — Verarbeitung",
+      "layout": "Instruction card",
+      "content": "Title: Your turn.\nNumbered steps:\n1. Pick one topic you're studying right now.\n2. Close your notes. No phone.\n3. Write everything you remember. Don't look.\nTimer badge: 2 minutes ⏱",
+      "speakerCue": "Read the three steps aloud slowly before starting the timer. Leave this slide visible the entire time. Start the timer immediately after saying \"Go.\"",
+      "designPrompt": "Return to the navy base. Title \"Your turn.\" in large amber Inter Bold at the top. Numbered list in large white Inter Regular, widely spaced — one step per visual breath. Timer badge in amber, bottom-right corner, large and legible: \"2 min ⏱\". The slide should feel like a clear, unambiguous instruction card. Steps must be readable from the back of the room."
+    },
+    {
+      "number": 6,
+      "title": "Assessing Question",
+      "phase": "A — Assessing",
+      "layout": "Takeaway card",
+      "content": "Large text: \"Who found at least one gap — something you thought you knew but couldn't recall? 🖐\"",
+      "speakerCue": "Ask the question aloud, let the hands go up, then deliver the closing line verbally: \"That discomfort is the learning. Use your gaps.\" Do not read the closing from a slide.",
+      "designPrompt": "Navy base, slightly warmer — consider a very subtle shift toward dark blue-teal (#1A3044) to signal the loop is closing. The question fills the slide in large white Inter Bold. The 🖐 emoji in amber for warmth. No other elements. Calm and conclusive — like the last line of a good lesson."
+    }
+  ],
+  "misconceptions": [
+    {
+      "misconception": "\"I already use retrieval practice — I quiz myself sometimes.\"",
+      "reality": "Casual, occasional self-quizzing is not the same as systematic retrieval practice. The key is regularity, deliberate gap-finding, and doing it before you feel ready — not as a final check after you feel confident."
+    },
+    {
+      "misconception": "\"Getting it wrong wastes time — I should study until I know it, then test myself.\"",
+      "reality": "The errors are the learning. Attempting recall before you feel ready, and getting things wrong, produces stronger long-term memory than waiting until you're confident and then testing."
+    }
+  ],
+  "outOfScope": [
+    "Spaced repetition — a powerful complement to retrieval practice, but a separate concept that requires its own 10 minutes",
+    "Other high-utility learning strategies (elaborative interrogation, interleaving, practice testing with feedback)",
+    "How to build a full exam prep schedule — this session teaches the core mechanism, not the calendar"
+  ],
+  "facilitatorTips": [
+    {
+      "title": "Let the silence work during the reactivation",
+      "body": "When you ask 'raise your hand if you've studied hard and still blanked' — stop talking. The silence is the point. Students need a moment to actually remember the experience before they raise their hand. If you fill the gap immediately, you lose the emotional hook that makes the rest of the session land."
+    },
+    {
+      "title": "Don't rescue students during Verarbeitung",
+      "body": "When students are struggling to remember things during the 2-minute task, the impulse is to help. Resist it. The struggle is the learning. Walk the room quietly. If someone looks truly stuck, the only prompt to offer is: 'What's the first word that comes to mind about this topic?' Then let them keep going."
+    },
+    {
+      "title": "Name the misconception pre-emptively",
+      "body": "Students often push back mentally with 'I already do this — I use flashcards sometimes.' You can defuse this in the Informing phase by saying: 'Some of you might be thinking you already do this. The difference is: doing it systematically, before you feel ready — not just as a final check after you feel confident.'"
+    },
+    {
+      "title": "The close is everything",
+      "body": "The session's emotional payoff is the moment students look at their page and see what's missing. Give that moment space. After you say 'notice what's NOT there' — pause for 5 seconds before moving to the Assessing question. Let the gap sink in."
+    },
+    {
+      "title": "Adapt the level of experience quickly",
+      "body": "After the reactivation show-of-hands, you have about 3 seconds to read the room. If almost everyone puts their hand up: go at normal pace. If only a few do: slow down the Informing phase and make the push-up analogy even more explicit. If hands suggest a very experienced group: acknowledge it immediately and move faster through Informing."
+    }
+  ],
+  "deeperResources": [
+    "Make It Stick by Peter Brown, Henry Roediger, and Mark McDaniel — the most readable book on the science of learning; the chapter on retrieval practice is the place to start.",
+    "Retrieval Practice (retrievalpractice.org) — a free, practitioner-focused resource with ready-to-use strategies for different subjects and contexts."
+  ],
+  "editorialNotes": "No issues found — all ARIVA phases align with the ILO. The ILO is announced as a promise in Arrival, the problem it solves is surfaced in Reactivating, the mechanism is explained in Informing, the strategy is practiced in Verarbeitung, and the outcome (gap-finding) is checked in Assessing. Slide 04 was added as a natural second Informing slide to transition from concept to method without overloading Slide 03. The contingency notes cover all five common facilitation scenarios for this audience type."
+}

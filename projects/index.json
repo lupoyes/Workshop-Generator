@@ -1,0 +1,28 @@
+{
+  "workshops": [
+    {
+      "slug": "gamify_live_quiz",
+      "title": "Gamify Your In-Class Live Quiz",
+      "audience": "University instructors, teachers, and trainers familiar with traditional lecture delivery; limited experience with live quiz tools or gamification as a deliberate pedagogical technique",
+      "ilo": "Design a single live-quiz question that connects a game mechanic to a specific learning outcome — so students retrieve and apply knowledge rather than guess.",
+      "bloomsLevel": "Apply",
+      "generatedAt": "2026-05-13"
+    },
+    {
+      "slug": "exam_prep_strategy",
+      "title": "The Most Effective Study Technique You're Probably Not Using",
+      "audience": "University students preparing for exams",
+      "ilo": "By the end of this workshop, participants will be able to use retrieval practice as a study method by recalling course content from memory without looking at notes, and identifying gaps to guide further study.",
+      "bloomsLevel": "Apply",
+      "generatedAt": "2026-05-13"
+    },
+    {
+      "slug": "variance_sample",
+      "title": "Calculate the Variance of a Sample",
+      "audience": "Students, no statistics background",
+      "ilo": "Calculate the variance of a small dataset by hand, following the three-step process: subtract the mean, square the differences, and average the squared values.",
+      "bloomsLevel": "Apply",
+      "generatedAt": "2026-05-13"
+    }
+  ]
+}

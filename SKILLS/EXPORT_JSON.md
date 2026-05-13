@@ -1,6 +1,7 @@
 # Skill 06 — Export to JSON
 
-**Stage:** 6 of 6 (optional — run after Skill 05)
+**Stage:** 6 of 6 — runs automatically after Skill 05 (Finalize) is approved and committed
+**Triggered by:** Skill 05, Step 7 — do not wait for a separate user instruction
 **Reads:** ALL five project files:
   - `projects/<slug>/01_research.md`
   - `projects/<slug>/02_learning_goals.md`
@@ -15,9 +16,11 @@
 
 ## Purpose
 
-Transform the five Markdown files produced by Skills 01–05 into a single, machine-readable `workshop.json` that the Next.js frontend can consume. This skill does **not** add content — it extracts and restructures exactly what was written in the previous stages.
+Transform the five Markdown files produced by Skills 01–05 into a single, machine-readable `workshop.json` that the frontend can consume. This skill does **not** add or modify content — it extracts and restructures exactly what was approved and committed in the previous stages.
 
 The `projects/index.json` manifest is also updated so the frontend can list all workshops without scanning directories.
+
+This skill is **not optional**. It runs as the final step of every pipeline run, immediately after `FINAL_<slug>.md` is written.
 
 ---
 
@@ -264,6 +267,8 @@ A good export:
 ## Announce on Completion
 
 Tell the user:
-1. Which file was written (`projects/<slug>/workshop.json`)
-2. That `projects/index.json` was updated
-3. That the workshop is now available in the frontend
+1. `✓ workshop.json written → projects/<slug>/workshop.json`
+2. `✓ index.json updated → projects/index.json`
+3. A one-line summary: "The `<slug>` workshop is now live in the frontend — all 6 skills complete."
+
+Do not ask the user for further confirmation. The pipeline is complete.

@@ -1,0 +1,167 @@
+{
+  "slug": "gamify_live_quiz",
+  "title": "Gamify Your In-Class Live Quiz",
+  "generatedAt": "2026-05-13",
+  "meta": {
+    "format": "In-person",
+    "audience": "University instructors, teachers, and trainers familiar with traditional lecture delivery; limited experience with live quiz tools or gamification as a deliberate pedagogical technique",
+    "groupSize": "10–30 participants",
+    "duration": "10 minutes"
+  },
+  "ilo": "Design a single live-quiz question that connects a game mechanic to a specific learning outcome — so students retrieve and apply knowledge rather than guess.",
+  "bloomsLevel": "Apply",
+  "coreConcept": "A live quiz only drives learning when each question is tied to a specific learning outcome and uses game mechanics (points, immediate feedback, leaderboards) to make students want to answer — not just comply.",
+  "timingCard": {
+    "arrival": "\"Write one live-quiz question that makes students retrieve and apply knowledge — not just click.\"",
+    "reactivating": "\"Think of the last time you asked a question mid-class and only 2–3 hands went up. Hands up if that's happened to you.\"",
+    "informing": "Game mechanic + learning outcome = live quiz that teaches. Recognition ≠ retrieval.",
+    "verarbeitung": "\"Think of one concept your students often get wrong. Write one quiz question that requires retrieval — not recognition.\" — 2 min timer",
+    "assessing": "\"What's the difference between a question that checks understanding and one that just checks whether students were paying attention?\""
+  },
+  "preRunChecklist": [
+    "Read the ILO out loud once — you should be able to say it without looking",
+    "Know the reactivation question by heart — it's the first thing out of your mouth after your name",
+    "Have Slide 04 (Verarbeitung task) visible to participants before you start the timer",
+    "Set up a visible 2-minute timer (phone timer, projected clock, or online timer at e.g. timer.guru)",
+    "Know the assessing question — don't improvise it, it must map to the ILO",
+    "Know the distinction cold: recognition question vs. retrieval question — you'll need to model it",
+    "Have your own worked example ready (confirmation bias rewrite, or substitute one from your field)",
+    "Have one sentence ready to park out-of-scope questions: \"Great — that's beyond today's scope. Worth exploring after.\""
+  ],
+  "ariva": {
+    "arrival": {
+      "timeRange": "0:00–1:00",
+      "script": "\"Hi, I'm [name]. In the next 10 minutes we're going to look at live quizzes and gamification — specifically, how to design them so they actually check learning, not just participation. By the end, you'll be able to write one live-quiz question that uses a game mechanic to make students retrieve and apply knowledge — not just click the first answer that looks right. Let's go.\"\n\nCue: Say the ILO clearly and directly. Don't soften it or add caveats. Participants should hear a concrete, achievable promise — one question, well designed — not a vague invitation to 'explore gamification.'\n\nTransition: Move immediately into the reactivation question. No pause, no preamble."
+    },
+    "reactivating": {
+      "timeRange": "1:00–2:30",
+      "question": "Think of the last time you asked students a question mid-class and only two or three hands went up. Hands up if that's happened to you.",
+      "format": "Show of hands",
+      "script": "\"Before we get into it — think of the last time you asked students a question mid-class and only two or three hands went up. Hands up if that's happened to you.\"\n\n(Wait. Almost every hand should go up. Acknowledge it.)\n\n\"Right. Every hand. Here's the thing: that gap — between the number of students in the room and the number willing to answer — is exactly the problem a well-designed live quiz solves. Not by making class more 'fun' — but by changing the social contract of answering.\"\n\nCue: If only a few hands go up, add: \"How many students are typically in your class? And how many answer voluntarily? That ratio is what we're working with.\"\n\nTransition: \"Here's what changes when you design the quiz right…\""
+    },
+    "informing": {
+      "timeRange": "2:30–7:00",
+      "coreConcept": "A game mechanic without a learning outcome is entertainment. A learning outcome without a game mechanic is homework. The live quiz is where they collide — and that collision is what you design.",
+      "script": "\"Here's what most instructors do when they first try Kahoot! or Mentimeter: they import questions from a question bank, or they copy-paste from last semester's test. And students have a good time — there's the countdown, the music, the leaderboard. But if you look at the questions, most of them can be answered by guessing from context, or by remembering what was said two slides ago. The mechanic is there. The learning isn't.\n\nThe reason is simple: game mechanics amplify whatever the question is already doing. If the question requires retrieval — genuinely making students pull something from memory and connect it — the countdown and the leaderboard turn that retrieval into a high-stakes moment that burns the answer in. If the question just requires recognition — 'which of these four things did I just say?' — the mechanic turns it into a reflex game.\n\nSo the design move is this: before you write a quiz question, ask yourself — 'Can a student answer this correctly without having understood anything?' If yes, rewrite it. A good live-quiz question should be answerable only if the student can retrieve and apply something — connect a term to a context, spot the error in an example, choose the right next step in a scenario.\n\nQuick example. Instead of: 'What is the definition of confirmation bias?' — ask: 'A researcher only reads studies supporting their hypothesis. What cognitive bias is most likely at play?' Same concept. The second question requires the student to recognise an instance of the concept in context — that's retrieval plus application. That's what makes the game mechanic earn its place.\"\n\nCue: One concept, one example, one rewrite. Park any second idea.\nCue: Around 6:30, check in: \"Does this distinction make sense? Any quick questions before you try it?\" Take one max.\nTransition: \"Now I want you to try it.\""
+    },
+    "verarbeitung": {
+      "timeRange": "7:00–9:30",
+      "taskPrompt": "Think of one concept from your own course that students regularly get wrong or forget quickly. In pairs, write one quiz question — just one — that uses a game mechanic to check whether they actually understood it. You have 2 minutes.",
+      "format": "Pairs",
+      "script": "\"Here's what I want you to do. You have 2 minutes. Turn to the person next to you. Think of one concept from your course that students regularly get wrong or forget. Then write one quiz question — just one — that requires students to retrieve and apply that concept. Not a definition question. A question where the correct answer is only reachable if they understood.\n\n(Start visible timer — phone, projected clock, or call it out.)\n\nGo.\"\n\nCue: Circulate and listen. Note 1–2 strong examples to name-check in the close. Note definition-style questions to gently reframe.\nCue: At 1:30: \"Thirty seconds — finish your question.\"\n\nClose: \"Time. Let's hear one — tell me the question you wrote, and tell me: what's the learning outcome it's checking?\"\n(Take 1–2 responses. If they can't name the outcome, prompt: \"What did you want students to be able to DO with that concept?\")\n\nTransition: \"Last question before we finish.\""
+    },
+    "assessing": {
+      "timeRange": "9:30–10:00",
+      "question": "What's the difference between a quiz question that checks understanding and one that just checks whether students were paying attention?",
+      "successSignal": "A participant has met the ILO if they can articulate that a well-designed question requires active retrieval or application — not recognition of something stated seconds earlier, and not guessable from context or answer options alone.",
+      "script": "\"One last question — and I want a one-sentence answer. What's the difference between a quiz question that checks understanding and one that just checks whether students were paying attention?\"\n\n(Collect 2–3 responses. Listen for language around retrieval, application, connecting to context.)\n\n\"Exactly. The question that checks understanding requires the student to do something with the knowledge — not just recognise it. That's the design move. That's what makes the game mechanic worth it.\n\nYou've just done 10 minutes on live-quiz design. The question you wrote in pairs — that's the one to try in your next class. Start there.\"\n\nCue: If responses are vague, prompt: \"What does the student have to DO with the knowledge to get it right?\""
+    }
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "Arrival / Title Card",
+      "phase": "A — Arrival",
+      "layout": "Title card",
+      "content": "Title: Gamify Your In-Class Live Quiz\nSubtitle: Design one quiz question that makes students actually think.\nPresenter: [Name] · [Date / Course / Event]",
+      "speakerCue": "Read your name, the title, and the subtitle (ILO in plain language) aloud. Move on immediately — no backstory, no agenda preview.",
+      "designPrompt": "Full-bleed deep violet background (#1E0A3C). Title in large Space Grotesk Bold, white, centered at 60–70% of slide width. A single geometric game-UI motif in the top-right corner: a minimalist leaderboard icon or trophy outline rendered in electric lime (#C6F135) at low opacity — enough to signal the game theme without competing with the title. Subtitle in smaller weight below the title in off-white (#E8E8E8). Presenter credit line small at bottom center. No gradients. No decorative borders. The overall feeling is: you've just opened a slick app and the session is about to start."
+    },
+    {
+      "number": 2,
+      "title": "Reactivating Question",
+      "phase": "R — Reactivating",
+      "layout": "Quote card",
+      "content": "Large text: \"Last time you asked a question mid-class and only 2–3 hands went up — raise yours now.\"\nSmall label below: Think about it.",
+      "speakerCue": "Read the question aloud, then wait. Collect show of hands before advancing. Don't advance until you've acknowledged the response.",
+      "designPrompt": "Deep violet background, slightly lighter than Slide 01 (add 8% white tint) to signal a new phase. The question text in electric lime (#C6F135), Space Grotesk Bold, very large — occupying 60–65% of slide height. The small italic label \"Think about it.\" in white below at half the size. No images, no icons. The lime question text should feel like a notification on a dark screen — urgent, direct, impossible to ignore."
+    },
+    {
+      "number": 3,
+      "title": "Informing: The Core Concept",
+      "phase": "I — Informing",
+      "layout": "Two-column",
+      "content": "Left column headline: \"Mechanic + Outcome = Learning\"\nLeft column body: ⚡ Game mechanic alone → entertainment | 🎯 Learning outcome alone → homework\nRight column: 2×2 quadrant diagram — axes: High/Low mechanic (x), Low/High outcome (y). Top-right quadrant highlighted in electric lime, labelled \"Live quiz that works\"",
+      "speakerCue": "Use this slide as a visual anchor while you talk. Point to the highlighted quadrant when you land the core line. Don't read the bullets — they're scaffolding for the visual, not a reading list.",
+      "designPrompt": "Deep violet background. Left column: headline in electric lime, large and bold. Two short supporting lines in white with ⚡ and 🎯 icons in lime. Right column: a clean 2×2 quadrant diagram with thin white grid lines and axis labels in off-white. The top-right quadrant filled in electric lime at 20% opacity with a bold lime border; label \"Live quiz that works\" in white bold inside it. All other quadrants remain dark and unlabelled. The slide should feel like a framework from a confident, design-literate speaker, not a textbook diagram."
+    },
+    {
+      "number": 4,
+      "title": "Informing: The Rewrite Move",
+      "phase": "I — Informing (continued)",
+      "layout": "Full-image (comparison card)",
+      "content": "Top section label: ❌ Recognition question — \"What is the definition of confirmation bias?\"\nBottom section label: ✅ Retrieval question — \"A researcher only reads studies supporting their hypothesis. What cognitive bias is at play?\"",
+      "speakerCue": "Advance to this slide when you introduce the example. Read both questions aloud. Pause after the second — give participants a moment to register the difference. This is the 'aha' moment; don't rush it.",
+      "designPrompt": "Split horizontally: top half has a deep red-violet (#2D0A1E) tinted background with a faint ❌ icon at 10% opacity. Bottom half has deep violet (#1E0A3C) with a faint ✅ in electric lime at 10% opacity. The dividing line is a thin amber rule (#F5A623). Each section has a small label in amber (\"❌ Recognition\" / \"✅ Retrieval\") followed by the question text in white, larger, bold. The contrast should feel like before/after — red-tinted darkness vs. clear, lime-accented energy."
+    },
+    {
+      "number": 5,
+      "title": "Verarbeitung Task",
+      "phase": "V — Verarbeitung",
+      "layout": "Instruction card",
+      "content": "Title: \"Your turn.\"\nNumbered steps:\n1. Think of one concept your students often get wrong.\n2. Write one quiz question that requires retrieval — not recognition.\nTimer badge: ⏱ 2 minutes",
+      "speakerCue": "Read the task aloud while this slide is showing. Start the timer visibly (phone or projected clock). Leave this slide up the entire time participants are working. Do not advance.",
+      "designPrompt": "Background shifts to a slightly lighter violet-grey (#2A1550) to signal the room is now active. Title \"Your turn.\" in electric lime, very large, top-left, bold — like a game prompt. The two numbered steps in white, generous line spacing; numbers in lime, text in white. An amber timer badge in the bottom-right corner: pill-shaped, amber fill (#F5A623), \"⏱ 2 min\" in bold dark text (#1E0A3C). The badge should feel like a UI countdown element — game-native, not clipart. The slide feels like an invitation to play."
+    },
+    {
+      "number": 6,
+      "title": "Assessing Question",
+      "phase": "A — Assessing",
+      "layout": "Takeaway card",
+      "content": "Large text: \"What's the difference between a question that checks understanding and one that just checks attention?\"",
+      "speakerCue": "Ask the question aloud. Collect 2–3 responses. Synthesise in one sentence. Close the session.",
+      "designPrompt": "Background warms slightly — deep violet with a subtle amber undertone to signal the session is closing. The question text in white, Space Grotesk Bold, large — occupying 70% of the slide. A thin amber rule (#F5A623) above the question, spanning 40% of slide width, centred — like a closing ceremony marker. No other elements. Quieter than Slide 02 but still sharp."
+    },
+    {
+      "number": 7,
+      "title": "Close / Where to Go Next",
+      "phase": "Close",
+      "layout": "Title card",
+      "content": "Main line: \"Start with one question. Try it next class.\"\nSub-line: Tool suggestions: Kahoot! · Mentimeter · Poll Everywhere · Slido",
+      "speakerCue": "Leave this slide up as participants leave or as you transition to Q&A. It's a conversation-starter for anyone who wants to keep going.",
+      "designPrompt": "Return to Slide 01's deep violet. The main line in electric lime, bold, centred — the payoff of the session. Tool suggestions in small off-white text below as a simple inline list. The same faint leaderboard/trophy icon from Slide 01 reappears in the bottom-right in lime at low opacity — visual bookend. Game complete, level unlocked. Clean, confident, done."
+    }
+  ],
+  "misconceptions": [
+    {
+      "misconception": "Gamification means adding points and a leaderboard to any question.",
+      "reality": "Game mechanics only drive learning when the question itself requires cognitive effort — the mechanic amplifies engagement, but can't substitute for a well-designed prompt."
+    },
+    {
+      "misconception": "Students who score high on a live quiz have understood the material.",
+      "reality": "Speed-based scoring (like Kahoot!'s default) rewards fast clicking, not deep thinking. Learning-focused quizzes deprioritise speed or use accuracy-only scoring."
+    }
+  ],
+  "outOfScope": [
+    "Step-by-step tutorials for specific tools (Kahoot!, Mentimeter, Poll Everywhere) — this is pedagogy-first, not a software walkthrough",
+    "Designing a full quiz (multiple questions across a lesson arc) — the 10-minute workshop covers ONE question, well designed",
+    "Scoring and grading strategies — a related but separate pedagogical question requiring more time"
+  ],
+  "facilitatorTips": [
+    {
+      "title": "Absorb scepticism early — don't fight it",
+      "body": "Instructors who associate gamification with 'making things fun' are not wrong — they've seen it misused. Don't defend gamification; instead, validate the scepticism and redirect it: 'That's exactly right — entertainment and learning aren't the same thing. What we're doing today is making them collide deliberately.' The research does the arguing; you just have to give it room."
+    },
+    {
+      "title": "Model the rewrite yourself",
+      "body": "The confirmation bias example in the Informing phase is most powerful when you deliver it conversationally, not read it off the slide. Practice the before/after rewrite out loud until it feels natural. If your audience teaches in a specific discipline, swap in an example from their field — a medical diagnosis, a legal scenario, a design brief. The principle is identical; the example lands harder when it's theirs."
+    },
+    {
+      "title": "The timer is a teaching tool, not just logistics",
+      "body": "The visible 2-minute timer in Verarbeitung is part of the pedagogy, not just time management. It mimics the countdown mechanic of the live quiz — participants experience the mild pressure of a game mechanic while designing one. If you can project the timer, do it. If not, announce '90 seconds left' and '30 seconds' explicitly. Don't let the task drift open-ended."
+    },
+    {
+      "title": "Name the distinction, don't just feel it",
+      "body": "During the Verarbeitung debrief, some pairs will produce excellent retrieval questions without being able to say why they're good. Help them name it: 'You've written a question where the correct answer is only reachable if the student understood — not guessed, not remembered what you said 30 seconds ago. That's the distinction.' Naming it out loud is what converts experience into transferable principle."
+    },
+    {
+      "title": "Don't let tool questions hijack Informing",
+      "body": "In a room of instructors who've heard of Kahoot! and Mentimeter, someone will ask 'which tool is best?' Park it warmly: 'Tool choice is secondary — today we build the question first. After the session I'm happy to compare tools. What are you currently using?' Write it down visibly. Return to it only if time allows."
+    }
+  ],
+  "deeperResources": [
+    "Retrieval Practice (The Learning Scientists) — learningscientists.org/retrieval-practice. A concise, evidence-based overview of why retrieval beats re-reading and passive review, with classroom implementation guides. Free, peer-reviewed, directly applicable.",
+    "\"Make It Stick\" by Brown, Roediger & McDaniel — The most accessible book-length treatment of retrieval practice, spaced repetition, and interleaving for educators. Chapter 2 (\"To Learn, Retrieve\") is the most directly relevant and takes under an hour to read."
+  ],
+  "editorialNotes": "No issues found — all ARIVA phases align with the ILO. The ILO is stated in the Arrival, practiced in the Verarbeitung (participants write one retrieval question from their own course), and assessed in the closing question (participants articulate the retrieval vs. recognition distinction). The reactivation hook (participation gap) connects naturally to the core concept (game mechanic + retrieval question). Slide 03b was retained as a second Informing slide because the recognition/retrieval contrast is the pivot point of the entire workshop and benefits from a dedicated visual moment. All other elements copied directly from Skills 01–04 with minor copy refinements for cohesion."
+}
